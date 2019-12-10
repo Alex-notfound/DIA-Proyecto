@@ -1,0 +1,12 @@
+C:\Users\curra\source\repos\ParserHTML\ParserHTML\obj\Debug\ParserHTML.csprojAssemblyReference.cache
+C:\Users\curra\source\repos\ParserHTML\ParserHTML\bin\Debug\ParserHTML.exe.config
+C:\Users\curra\source\repos\ParserHTML\ParserHTML\bin\Debug\ParserHTML.exe
+C:\Users\curra\source\repos\ParserHTML\ParserHTML\bin\Debug\ParserHTML.pdb
+C:\Users\curra\source\repos\ParserHTML\ParserHTML\obj\Debug\ParserHTML.exe
+C:\Users\curra\source\repos\ParserHTML\ParserHTML\obj\Debug\ParserHTML.pdb
+C:\Zaplicaciones\DIA_apps\DIA\ParserHTML\ParserHTML\obj\Debug\ParserHTML.csprojAssemblyReference.cache
+C:\Zaplicaciones\DIA_apps\DIA\ParserHTML\ParserHTML\obj\Debug\ParserHTML.exe
+C:\Zaplicaciones\DIA_apps\DIA\ParserHTML\ParserHTML\obj\Debug\ParserHTML.pdb
+C:\Zaplicaciones\DIA_apps\DIA\ParserHTML\ParserHTML\bin\Debug\ParserHTML.exe.config
+C:\Zaplicaciones\DIA_apps\DIA\ParserHTML\ParserHTML\bin\Debug\ParserHTML.exe
+C:\Zaplicaciones\DIA_apps\DIA\ParserHTML\ParserHTML\bin\Debug\ParserHTML.pdb
