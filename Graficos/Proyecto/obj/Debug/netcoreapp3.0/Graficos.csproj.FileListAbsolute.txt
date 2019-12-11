@@ -1,0 +1,38 @@
+D:\Universidad\DIA\Proyecto\Proyecto\bin\Debug\netcoreapp3.0\Graficos.exe
+D:\Universidad\DIA\Proyecto\Proyecto\bin\Debug\netcoreapp3.0\Graficos.deps.json
+D:\Universidad\DIA\Proyecto\Proyecto\bin\Debug\netcoreapp3.0\Graficos.runtimeconfig.json
+D:\Universidad\DIA\Proyecto\Proyecto\bin\Debug\netcoreapp3.0\Graficos.runtimeconfig.dev.json
+D:\Universidad\DIA\Proyecto\Proyecto\bin\Debug\netcoreapp3.0\Graficos.dll
+D:\Universidad\DIA\Proyecto\Proyecto\bin\Debug\netcoreapp3.0\Graficos.pdb
+D:\Universidad\DIA\Proyecto\Proyecto\obj\Debug\netcoreapp3.0\Graficos.csprojAssemblyReference.cache
+D:\Universidad\DIA\Proyecto\Proyecto\obj\Debug\netcoreapp3.0\Graficos.AssemblyInfoInputs.cache
+D:\Universidad\DIA\Proyecto\Proyecto\obj\Debug\netcoreapp3.0\Graficos.AssemblyInfo.cs
+D:\Universidad\DIA\Proyecto\Proyecto\obj\Debug\netcoreapp3.0\Graficos.dll
+D:\Universidad\DIA\Proyecto\Proyecto\obj\Debug\netcoreapp3.0\Graficos.pdb
+C:\Users\Iago\OneDrive\Proyecto\Proyecto\obj\Debug\netcoreapp3.0\Graficos.csprojAssemblyReference.cache
+C:\Users\Iago\OneDrive\Proyecto\Proyecto\obj\Debug\netcoreapp3.0\Graficos.AssemblyInfoInputs.cache
+C:\Users\Iago\OneDrive\Proyecto\Proyecto\obj\Debug\netcoreapp3.0\Graficos.AssemblyInfo.cs
+C:\Users\Iago\OneDrive\Proyecto\Proyecto\obj\Debug\netcoreapp3.0\Graficos.dll
+C:\Users\Iago\OneDrive\Proyecto\Proyecto\obj\Debug\netcoreapp3.0\Graficos.pdb
+C:\Users\fdezi\OneDrive\Proyecto DIA\Proyecto\obj\Debug\netcoreapp3.0\Graficos.csprojAssemblyReference.cache
+C:\Users\fdezi\OneDrive\Proyecto DIA\Proyecto\obj\Debug\netcoreapp3.0\Graficos.AssemblyInfoInputs.cache
+C:\Users\fdezi\OneDrive\Proyecto DIA\Proyecto\obj\Debug\netcoreapp3.0\Graficos.AssemblyInfo.cs
+C:\Users\fdezi\OneDrive\Proyecto DIA\Proyecto\obj\Debug\netcoreapp3.0\Graficos.dll
+C:\Users\fdezi\OneDrive\Proyecto DIA\Proyecto\obj\Debug\netcoreapp3.0\Graficos.pdb
+C:\Users\fdezi\OneDrive\Proyecto DIA\Proyecto\bin\Debug\netcoreapp3.0\Graficos.exe
+C:\Users\fdezi\OneDrive\Proyecto DIA\Proyecto\bin\Debug\netcoreapp3.0\Graficos.deps.json
+C:\Users\fdezi\OneDrive\Proyecto DIA\Proyecto\bin\Debug\netcoreapp3.0\Graficos.runtimeconfig.json
+C:\Users\fdezi\OneDrive\Proyecto DIA\Proyecto\bin\Debug\netcoreapp3.0\Graficos.runtimeconfig.dev.json
+C:\Users\fdezi\OneDrive\Proyecto DIA\Proyecto\bin\Debug\netcoreapp3.0\Graficos.dll
+C:\Users\fdezi\OneDrive\Proyecto DIA\Proyecto\bin\Debug\netcoreapp3.0\Graficos.pdb
+C:\Users\Iago\OneDrive\Proyecto DIA\Proyecto\obj\Debug\netcoreapp3.0\Graficos.csprojAssemblyReference.cache
+C:\Users\Iago\OneDrive\Proyecto DIA\Proyecto\obj\Debug\netcoreapp3.0\Graficos.AssemblyInfoInputs.cache
+C:\Users\Iago\OneDrive\Proyecto DIA\Proyecto\obj\Debug\netcoreapp3.0\Graficos.AssemblyInfo.cs
+C:\Users\Iago\OneDrive\Proyecto DIA\Proyecto\obj\Debug\netcoreapp3.0\Graficos.dll
+C:\Users\Iago\OneDrive\Proyecto DIA\Proyecto\obj\Debug\netcoreapp3.0\Graficos.pdb
+C:\Users\Iago\OneDrive\Proyecto DIA\Proyecto\bin\Debug\netcoreapp3.0\Graficos.exe
+C:\Users\Iago\OneDrive\Proyecto DIA\Proyecto\bin\Debug\netcoreapp3.0\Graficos.deps.json
+C:\Users\Iago\OneDrive\Proyecto DIA\Proyecto\bin\Debug\netcoreapp3.0\Graficos.runtimeconfig.json
+C:\Users\Iago\OneDrive\Proyecto DIA\Proyecto\bin\Debug\netcoreapp3.0\Graficos.runtimeconfig.dev.json
+C:\Users\Iago\OneDrive\Proyecto DIA\Proyecto\bin\Debug\netcoreapp3.0\Graficos.dll
+C:\Users\Iago\OneDrive\Proyecto DIA\Proyecto\bin\Debug\netcoreapp3.0\Graficos.pdb
