@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Escritura\\Escritura.csproj": {}
+    "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Escritura\\Escritura.csproj": {
+    "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Escritura\\Escritura.csproj",
-        "projectName": "Escritura",
-        "projectPath": "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Escritura\\Escritura.csproj",
+        "projectUniqueName": "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
+        "projectName": "NovelasAPP",
+        "projectPath": "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
         "packagesPath": "C:\\Users\\spire\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Escritura\\obj\\",
+        "outputPath": "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
