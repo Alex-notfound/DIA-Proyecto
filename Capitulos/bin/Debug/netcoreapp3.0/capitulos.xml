@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<capitulos>
+  <capitulo titulo="capitulo1" nota="nota1">
+    <seccion nota="seccion1" texto="esta es la seccion1" />
+  </capitulo>
+  <capitulo titulo="capitulo1" nota="nota1">
+    <seccion nota="seccion2" texto="esta es la seccion2" />
+  </capitulo>
+</capitulos>

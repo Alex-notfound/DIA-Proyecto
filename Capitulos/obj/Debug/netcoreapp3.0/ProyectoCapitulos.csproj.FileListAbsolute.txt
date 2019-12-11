@@ -1,0 +1,11 @@
+C:\Users\fufer\RiderProjects\ProyectoCapitulos\ProyectoCapitulos\bin\Debug\netcoreapp3.0\ProyectoCapitulos.exe
+C:\Users\fufer\RiderProjects\ProyectoCapitulos\ProyectoCapitulos\bin\Debug\netcoreapp3.0\ProyectoCapitulos.deps.json
+C:\Users\fufer\RiderProjects\ProyectoCapitulos\ProyectoCapitulos\bin\Debug\netcoreapp3.0\ProyectoCapitulos.runtimeconfig.json
+C:\Users\fufer\RiderProjects\ProyectoCapitulos\ProyectoCapitulos\bin\Debug\netcoreapp3.0\ProyectoCapitulos.runtimeconfig.dev.json
+C:\Users\fufer\RiderProjects\ProyectoCapitulos\ProyectoCapitulos\bin\Debug\netcoreapp3.0\ProyectoCapitulos.dll
+C:\Users\fufer\RiderProjects\ProyectoCapitulos\ProyectoCapitulos\bin\Debug\netcoreapp3.0\ProyectoCapitulos.pdb
+C:\Users\fufer\RiderProjects\ProyectoCapitulos\ProyectoCapitulos\obj\Debug\netcoreapp3.0\ProyectoCapitulos.csprojAssemblyReference.cache
+C:\Users\fufer\RiderProjects\ProyectoCapitulos\ProyectoCapitulos\obj\Debug\netcoreapp3.0\ProyectoCapitulos.AssemblyInfoInputs.cache
+C:\Users\fufer\RiderProjects\ProyectoCapitulos\ProyectoCapitulos\obj\Debug\netcoreapp3.0\ProyectoCapitulos.AssemblyInfo.cs
+C:\Users\fufer\RiderProjects\ProyectoCapitulos\ProyectoCapitulos\obj\Debug\netcoreapp3.0\ProyectoCapitulos.dll
+C:\Users\fufer\RiderProjects\ProyectoCapitulos\ProyectoCapitulos\obj\Debug\netcoreapp3.0\ProyectoCapitulos.pdb
