@@ -27,14 +27,13 @@ namespace PersonajesNovelas
             mainPanel.Controls.Add(this.BuildShow());
             mainPanel.Controls.Add(this.BuildDelete());
 
-            this.Size = new Size(300, 400);
+            this.Size = new Size(300, 200);
 
             this.Controls.Add(mainPanel);
         }
 
-        WFrms.Panel BuildCreate()
+        WFrms.Button BuildCreate()
         {
-            var pnl = new WFrms.Panel { Dock = WFrms.DockStyle.Top };
 
             BtCrearPersonaje = new Button
             {
@@ -43,15 +42,12 @@ namespace PersonajesNovelas
             };
 
 
-
-            pnl.Controls.Add(BtCrearPersonaje);
-            return pnl;
+            return BtCrearPersonaje;
 
         }
 
-        WFrms.Panel BuildShow()
+        WFrms.Button BuildShow()
         {
-            var pnl = new WFrms.Panel { Dock = WFrms.DockStyle.Top };
 
             BtMostrarPersonajes = new Button
             {
@@ -59,15 +55,12 @@ namespace PersonajesNovelas
                 Dock = DockStyle.Top
             };
 
-
-            pnl.Controls.Add(BtMostrarPersonajes);
-            return pnl;
+            return BtMostrarPersonajes;
 
         }
 
-        WFrms.Panel BuildDelete()
-        {
-            var pnl = new WFrms.Panel { Dock = WFrms.DockStyle.Top };
+        WFrms.Button BuildDelete()
+        { 
 
             BtBorrarPersonajes = new Button
             {
@@ -75,9 +68,7 @@ namespace PersonajesNovelas
                 Dock = DockStyle.Top
             };
 
-            pnl.Controls.Add(BtBorrarPersonajes);
-            return pnl;
-
+            return BtBorrarPersonajes;
         }
 
         public WFrms.Button BtCrearPersonaje
