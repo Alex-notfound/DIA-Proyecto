@@ -1,0 +1,11 @@
+C:\Users\AlxCu\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.exe
+C:\Users\AlxCu\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.deps.json
+C:\Users\AlxCu\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.runtimeconfig.json
+C:\Users\AlxCu\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.runtimeconfig.dev.json
+C:\Users\AlxCu\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.dll
+C:\Users\AlxCu\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.pdb
+C:\Users\AlxCu\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.csprojAssemblyReference.cache
+C:\Users\AlxCu\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.AssemblyInfoInputs.cache
+C:\Users\AlxCu\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.AssemblyInfo.cs
+C:\Users\AlxCu\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.dll
+C:\Users\AlxCu\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.pdb

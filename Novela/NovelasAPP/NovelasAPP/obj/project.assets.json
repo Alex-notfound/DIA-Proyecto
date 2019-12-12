@@ -8,25 +8,20 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\spire\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\AlxCu\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
+      "projectUniqueName": "C:\\Users\\AlxCu\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
       "projectName": "NovelasAPP",
-      "projectPath": "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
-      "packagesPath": "C:\\Users\\spire\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\obj\\",
+      "projectPath": "C:\\Users\\AlxCu\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
+      "packagesPath": "C:\\Users\\AlxCu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AlxCu\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\spire\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\AlxCu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
