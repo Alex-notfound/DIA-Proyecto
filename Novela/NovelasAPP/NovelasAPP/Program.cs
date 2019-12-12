@@ -16,7 +16,7 @@ namespace NovelasAPP
         static void Main()
         {
 
-            Application.Run(new MainWindowController().mainView);
+            Application.Run(new MainWindowController().MainView);
         }
     }
 }
