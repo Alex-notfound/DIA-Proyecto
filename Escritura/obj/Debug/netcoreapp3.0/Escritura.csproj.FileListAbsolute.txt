@@ -20,3 +20,14 @@ C:\Users\spire\Dropbox\Materias\4º Curso\1º Cuatrimestre\Desenvolvemento e int
 C:\Users\spire\Dropbox\Materias\4º Curso\1º Cuatrimestre\Desenvolvemento e integración de aplicacions\Proyecto\Escritura\obj\Debug\netcoreapp3.0\Escritura.AssemblyInfo.cs
 C:\Users\spire\Dropbox\Materias\4º Curso\1º Cuatrimestre\Desenvolvemento e integración de aplicacions\Proyecto\Escritura\obj\Debug\netcoreapp3.0\Escritura.dll
 C:\Users\spire\Dropbox\Materias\4º Curso\1º Cuatrimestre\Desenvolvemento e integración de aplicacions\Proyecto\Escritura\obj\Debug\netcoreapp3.0\Escritura.pdb
+C:\Users\spire\Documents\GitHub\NovelasApp\Escritura\bin\Debug\netcoreapp3.0\Escritura.exe
+C:\Users\spire\Documents\GitHub\NovelasApp\Escritura\bin\Debug\netcoreapp3.0\Escritura.deps.json
+C:\Users\spire\Documents\GitHub\NovelasApp\Escritura\bin\Debug\netcoreapp3.0\Escritura.runtimeconfig.json
+C:\Users\spire\Documents\GitHub\NovelasApp\Escritura\bin\Debug\netcoreapp3.0\Escritura.runtimeconfig.dev.json
+C:\Users\spire\Documents\GitHub\NovelasApp\Escritura\bin\Debug\netcoreapp3.0\Escritura.dll
+C:\Users\spire\Documents\GitHub\NovelasApp\Escritura\bin\Debug\netcoreapp3.0\Escritura.pdb
+C:\Users\spire\Documents\GitHub\NovelasApp\Escritura\obj\Debug\netcoreapp3.0\Escritura.csprojAssemblyReference.cache
+C:\Users\spire\Documents\GitHub\NovelasApp\Escritura\obj\Debug\netcoreapp3.0\Escritura.AssemblyInfoInputs.cache
+C:\Users\spire\Documents\GitHub\NovelasApp\Escritura\obj\Debug\netcoreapp3.0\Escritura.AssemblyInfo.cs
+C:\Users\spire\Documents\GitHub\NovelasApp\Escritura\obj\Debug\netcoreapp3.0\Escritura.dll
+C:\Users\spire\Documents\GitHub\NovelasApp\Escritura\obj\Debug\netcoreapp3.0\Escritura.pdb

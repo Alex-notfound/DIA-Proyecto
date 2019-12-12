@@ -5,5 +5,20 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI\Views\Main\MainWindowView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Personajes\BorrarPeresonajesPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Personajes\CrearPersonajePanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Personajes\PersonajesView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Personajes\MostrarPersonajesPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>
