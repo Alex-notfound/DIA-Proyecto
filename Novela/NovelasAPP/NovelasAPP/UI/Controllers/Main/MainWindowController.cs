@@ -11,31 +11,22 @@ namespace NovelasAPP.UI.Controllers
         public MainWindowController()
         {
             this.Build();
-
-
-
         }
 
         void Build()
         {
-            mainView = new MainWindowView();
-
-            mainView.btnPersonajes.Click += (sender, args) => this.BuildPersonajes(new PersonajesController()); mainView.Hide();
+            MainView = new MainWindowView();
+            MainView.BtnPersonajes.Click += (sender, args) => this.BuildPersonajes(new PersonajesController()); MainView.Hide();
         }
 
         void BuildPersonajes(PersonajesController pj)
         {
             PersonajesView view = pj.View;
-
             view.Show();
-
-            view.FormClosed += (sender, args) => mainView.Show();
+            view.FormClosed += (sender, args) => MainView.Show();
         }
 
-        
-
-
-        public MainWindowView mainView
+        public MainWindowView MainView
         {
             get; set;
         }
