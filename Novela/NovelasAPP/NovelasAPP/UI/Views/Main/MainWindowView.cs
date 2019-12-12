@@ -1,9 +1,6 @@
-﻿using System;
+﻿using NovelasAPP.Core.Capitulos;
+using NovelasAPP.Core.HTML;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 
 namespace NovelasAPP.UI
@@ -23,42 +20,44 @@ namespace NovelasAPP.UI
                 RowCount = 3
             };
 
-            this.btnCapitulos = new Button
+            this.BtnCapitulos = new Button
             {
                 AutoSize = true,
                 Text = "Capitulos"
             };
 
-            this.btnPersonajes = new Button
+            this.BtnPersonajes = new Button
             {
                 AutoSize = true,
                 Text = "Personajes"
             };
 
-            this.btnHTML = new Button
+            this.BtnHTML = new Button
             {
                 AutoSize = true,
                 Text = "Convertir libro a HTML"
             };
 
-            mainPanel.Controls.Add(this.btnCapitulos, 0, 0);
-            mainPanel.Controls.Add(this.btnPersonajes, 0, 1);
-            mainPanel.Controls.Add(this.btnHTML, 0, 2);
+            BtnHTML.Click += (sender, args) => ParserHTML.ParseLibro(new List<Capitulo>());
+
+            mainPanel.Controls.Add(this.BtnCapitulos, 0, 0);
+            mainPanel.Controls.Add(this.BtnPersonajes, 0, 1);
+            mainPanel.Controls.Add(this.BtnHTML, 0, 2);
 
             this.Controls.Add(mainPanel);
         }
 
-        public Button btnCapitulos
+        public Button BtnCapitulos
         {
             get; set;
         }
 
-        public Button btnPersonajes
+        public Button BtnPersonajes
         {
             get; set;
         }
 
-        public Button btnHTML
+        public Button BtnHTML
         {
             get; set;
         }

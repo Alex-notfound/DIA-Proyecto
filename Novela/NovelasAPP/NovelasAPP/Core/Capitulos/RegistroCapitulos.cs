@@ -7,7 +7,7 @@ using System.Xml;
 using System.Collections;
 using System.Xml.Linq;
 
-namespace ProyectoCapitulos.Core
+namespace NovelasAPP.Core.Capitulos
 {
     public class RegistroCapitulos : ICollection<Capitulo>
     {
@@ -18,27 +18,27 @@ namespace ProyectoCapitulos.Core
         public const string EtqNotas = "nota";
         public const string EtqTexto = "texto";
         public const string EtqTitulo = "titulo";
-        
+
         public RegistroCapitulos()
         {
-            this.capitulos = new List<Capitulo>();
+            Capitulos = new List<Capitulo>();
         }
 
         public RegistroCapitulos(IEnumerable<Capitulo> capitulos)
             : this()
         {
-            this.capitulos.AddRange(capitulos);
+            this.Capitulos.AddRange(capitulos);
         }
 
         public void Add(Capitulo c)
         {
-            this.capitulos.Add(c);
+            Capitulos.Add(c);
         }
 
 
         public bool Remove(Capitulo c)
         {
-            return this.capitulos.Remove(c);
+            return Capitulos.Remove(c);
         }
 
         /// <summary>
@@ -47,18 +47,18 @@ namespace ProyectoCapitulos.Core
         /// <param name="i">La pos. a eliminar</param>
 		public void RemoveAt(int i)
         {
-            this.capitulos.RemoveAt(i);
+            Capitulos.RemoveAt(i);
         }
 
 
         public void AddRange(IEnumerable<Capitulo> rs)
         {
-            this.capitulos.AddRange(rs);
+            Capitulos.AddRange(rs);
         }
 
         public int Count
         {
-            get { return this.capitulos.Count; }
+            get { return Capitulos.Count; }
         }
 
         public bool IsReadOnly
@@ -69,23 +69,23 @@ namespace ProyectoCapitulos.Core
 
         public void Clear()
         {
-            this.capitulos.Clear();
+            Capitulos.Clear();
         }
 
         public bool Contains(Capitulo c)
         {
-            return this.capitulos.Contains(c);
+            return Capitulos.Contains(c);
         }
 
 
         public void CopyTo(Capitulo[] c, int i)
         {
-            this.capitulos.CopyTo(c, i);
+            Capitulos.CopyTo(c, i);
         }
 
         IEnumerator<Capitulo> IEnumerable<Capitulo>.GetEnumerator()
         {
-            foreach (var c in this.capitulos)
+            foreach (var c in Capitulos)
             {
                 yield return c;
             }
@@ -93,7 +93,7 @@ namespace ProyectoCapitulos.Core
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            foreach (var c in this.capitulos)
+            foreach (var c in Capitulos)
             {
                 yield return c;
             }
@@ -101,24 +101,24 @@ namespace ProyectoCapitulos.Core
 
         public Capitulo GetCapitulo(string titulo)
         {
-            foreach (var capitulo in capitulos)
+            foreach (var capitulo in Capitulos)
             {
-                if (capitulo.titulo == titulo) return capitulo;
+                if (capitulo.Titulo == titulo) return capitulo;
             }
             return null;
         }
 
         public Capitulo this[int i]
         {
-            get { return this.capitulos[i]; }
-            set { this.capitulos[i] = value; }
+            get { return Capitulos[i]; }
+            set { Capitulos[i] = value; }
         }
 
         public override string ToString()
         {
             var toret = new StringBuilder();
 
-            foreach (Capitulo c in this.capitulos)
+            foreach (Capitulo c in Capitulos)
             {
                 toret.Append("Capitulo");
                 toret.AppendLine(c.ToString());
@@ -132,7 +132,7 @@ namespace ProyectoCapitulos.Core
         /// </summary>
         public void GuardaXml()
         {
-            this.GuardaXml(ArchivoXml);
+            GuardaXml(ArchivoXml);
         }
 
         /// <summary>
@@ -144,17 +144,17 @@ namespace ProyectoCapitulos.Core
             var doc = new XDocument();
             var root = new XElement(EtqCapitulos);
 
-            foreach (Capitulo capitulo in this.capitulos)
+            foreach (Capitulo capitulo in Capitulos)
             {
-                var secciones = capitulo.secciones;
+                var secciones = capitulo.Secciones;
                 foreach (var seccion in secciones)
                 {
-                    root.Add(new XElement(EtqCapitulo, 
-                                            new XAttribute(EtqTitulo, capitulo.titulo),
-                                            new XAttribute(EtqNotas, capitulo.notas),
+                    root.Add(new XElement(EtqCapitulo,
+                                            new XAttribute(EtqTitulo, capitulo.Titulo),
+                                            new XAttribute(EtqNotas, capitulo.Notas),
                                             new XElement(EtqSeccion,
-                                                new XAttribute(EtqNotas, seccion.notas),
-                                                new XAttribute(EtqTexto, seccion.texto)
+                                                new XAttribute(EtqNotas, seccion.Notas),
+                                                new XAttribute(EtqTexto, seccion.Texto)
                                             )
                                           )
                     );
@@ -186,14 +186,14 @@ namespace ProyectoCapitulos.Core
 
                     foreach (XElement capituloXml in capitulos)
                     {
-                        Capitulo c = new Capitulo((string) capituloXml.Attribute(EtqTitulo), (string) capituloXml.Attribute(EtqNotas));
+                        Capitulo c = new Capitulo((string)capituloXml.Attribute(EtqTitulo), (string)capituloXml.Attribute(EtqNotas));
 
                         var seccionesXML = capituloXml.Elements();
                         foreach (var seccion in seccionesXML)
                         {
-                            c.addSeccion(
-                                (string) seccion.Attribute(EtqNotas),
-                                (string) seccion.Attribute(EtqTexto)
+                            c.AddSeccion(
+                                (string)seccion.Attribute(EtqNotas),
+                                (string)seccion.Attribute(EtqTexto)
                             );
                         }
                         toret.Add(c);
@@ -212,7 +212,7 @@ namespace ProyectoCapitulos.Core
             return toret;
         }
 
-        public List<Capitulo> capitulos { get; set; }
+        public List<Capitulo> Capitulos { get; set; }
 
         /// <summary>
         /// Crea un registro de viajes con la lista de viajes recuperada

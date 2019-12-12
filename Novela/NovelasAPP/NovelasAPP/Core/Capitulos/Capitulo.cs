@@ -2,41 +2,41 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace ProyectoCapitulos.Core
+namespace NovelasAPP.Core.Capitulos
 {
     public class Capitulo
     {
         public Capitulo(string titulo, string notas)
         {
-            this.titulo = titulo;
-            this.notas = notas;
-            this.secciones = new List<Seccion>();
+            this.Titulo = titulo;
+            this.Notas = notas;
+            Secciones = new List<Seccion>();
         }
 
-        public string titulo
-        {
-            get; set;
-        }
-        
-        public string notas
+        public string Titulo
         {
             get; set;
         }
 
-        public List<Seccion> secciones
+        public string Notas
         {
             get; set;
         }
 
-        public void addSeccion(string notasSeccion, string textoSeccion)
+        public List<Seccion> Secciones
         {
-            secciones.Add(new Seccion(notasSeccion, textoSeccion));
+            get; set;
         }
 
-        public string printSecciones()
+        public void AddSeccion(string notasSeccion, string textoSeccion)
+        {
+            Secciones.Add(new Seccion(notasSeccion, textoSeccion));
+        }
+
+        public string PrintSecciones()
         {
             StringBuilder toret = new StringBuilder();
-            foreach (var seccion in secciones)
+            foreach (var seccion in Secciones)
             {
                 toret.Append(seccion);
             }
@@ -47,10 +47,9 @@ namespace ProyectoCapitulos.Core
         public override string ToString()
         {
             StringBuilder toret = new StringBuilder();
-            toret.Append(this.titulo + '\n');
-            toret.Append(this.notas + '\n');
-            toret.Append(this.printSecciones());
-
+            toret.Append(Titulo + '\n');
+            toret.Append(Notas + '\n');
+            toret.Append(PrintSecciones());
             return toret.ToString();
         }
     }

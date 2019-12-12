@@ -76,24 +76,24 @@ namespace NovelasAPP.UI
 
             try
             {
-                btBorrar.Click += (sender, args) => borrarUnicoPersonaje(listaPersonajes.SelectedItem.ToString());
+                btBorrar.Click += (sender, args) => BorrarUnicoPersonaje(listaPersonajes.SelectedItem.ToString());
                 
             }catch(NullReferenceException e)
             {
                 this.Close();
             }
-            btBorrarTodos.Click += (sender, args) => borrarPersonajes();
+            btBorrarTodos.Click += (sender, args) => BorrarPersonajes();
 
         }
 
-        private void borrarUnicoPersonaje(string personaje)
+        private void BorrarUnicoPersonaje(string personaje)
         {
             Registro.delete(personaje);
             Registro.GuardaXml();
             this.Close();
         }
 
-        private void borrarPersonajes()
+        private void BorrarPersonajes()
         {
             var pnl = new Panel { Dock = DockStyle.Bottom };
 

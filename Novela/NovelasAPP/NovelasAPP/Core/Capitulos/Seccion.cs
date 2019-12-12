@@ -1,26 +1,26 @@
-﻿namespace ProyectoCapitulos.Core
+﻿namespace NovelasAPP.Core.Capitulos
 {
     public class Seccion
     {
         public Seccion(string notas, string texto)
         {
-            this.notas = notas;
-            this.texto = texto;
+            this.Notas = notas;
+            this.Texto = texto;
         }
 
-        public string notas
+        public string Notas
         {
             get; set;
         }
 
-        public string texto
+        public string Texto
         {
             get; set;
         }
 
         public override string ToString()
         {
-            return texto + "\n";
+            return Texto + "\n";
         }
     }
 }
