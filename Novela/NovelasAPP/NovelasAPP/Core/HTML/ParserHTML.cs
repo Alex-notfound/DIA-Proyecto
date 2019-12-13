@@ -112,12 +112,20 @@ namespace NovelasAPP.Core.HTML
                 html += "\n";
             }
             html += "</body>\n</html>";
+            
             using (System.IO.StreamWriter writer = new System.IO.StreamWriter("libroHTML.html")){
                 writer.WriteLine(html);
             }
-            //Process.Start("libroHTML.html");
 
-            Console.WriteLine(html);
+            using (Process process = new Process())
+            {
+                process.StartInfo.UseShellExecute = true;
+                process.StartInfo.FileName = "chrome";
+                process.StartInfo.Arguments = @"libroHTML.html";
+                process.Start();
+            }
+
+            //Console.WriteLine(html);
         }
     }
 }
