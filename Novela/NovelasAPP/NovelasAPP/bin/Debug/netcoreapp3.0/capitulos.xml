@@ -3,7 +3,10 @@
   <capitulo titulo="capitulo1" nota="nota1">
     <seccion nota="seccion1" texto="esta es la seccion1" />
   </capitulo>
-  <capitulo titulo="capitulo1" nota="nota1">
-    <seccion nota="seccion2" texto="esta es la seccion2" />
+  <capitulo titulo="capitulo2" nota="nota1">
+    <seccion nota="seccion2" texto="esta es **la** *seccion2*" />
+	<seccion nota="seccion3" texto="esta es la seccion3" />
+    <seccion nota="seccion4" texto="esta es la seccion4" />
+
   </capitulo>
 </capitulos>
