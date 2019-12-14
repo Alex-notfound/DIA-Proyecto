@@ -38,7 +38,7 @@ namespace NovelasAPP.UI
                 Text = "Convertir libro a HTML"
             };
 
-            BtnHTML.Click += (sender, args) => ParserHTML.ParseLibro(new List<Capitulo>());
+            BtnHTML.Click += (sender, args) => ParserHTML.ParseLibro(Core.Capitulos.RegistroCapitulos.RecuperaXml().Capitulos);
 
             mainPanel.Controls.Add(this.BtnCapitulos, 0, 0);
             mainPanel.Controls.Add(this.BtnPersonajes, 0, 1);
