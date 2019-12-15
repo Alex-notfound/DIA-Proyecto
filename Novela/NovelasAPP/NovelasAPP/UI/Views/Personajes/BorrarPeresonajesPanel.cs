@@ -1,4 +1,4 @@
-﻿using NovelasAPP.Core;
+﻿using NovelasAPP.Core.Personajes;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -7,11 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NovelasAPP.UI
+namespace NovelasAPP.UI.Views
 {
     class BorrarPersonajesPanel : Form
     {
-
+        
         RegistroPersonajes Registro = new RegistroPersonajes();
         private object btBorrar;
 
@@ -76,24 +76,24 @@ namespace NovelasAPP.UI
 
             try
             {
-                btBorrar.Click += (sender, args) => BorrarUnicoPersonaje(listaPersonajes.SelectedItem.ToString());
+                btBorrar.Click += (sender, args) => borrarUnicoPersonaje(listaPersonajes.SelectedItem.ToString());
                 
             }catch(NullReferenceException e)
             {
                 this.Close();
             }
-            btBorrarTodos.Click += (sender, args) => BorrarPersonajes();
+            btBorrarTodos.Click += (sender, args) => borrarPersonajes();
 
         }
 
-        private void BorrarUnicoPersonaje(string personaje)
+        private void borrarUnicoPersonaje(string personaje)
         {
             Registro.delete(personaje);
             Registro.GuardaXml();
             this.Close();
         }
 
-        private void BorrarPersonajes()
+        private void borrarPersonajes()
         {
             var pnl = new Panel { Dock = DockStyle.Bottom };
 
@@ -115,6 +115,7 @@ namespace NovelasAPP.UI
             label1.Size = new Size(label1.PreferredWidth, label1.PreferredHeight);
             pnl.Controls.Add(label1);
             this.Controls.Add(pnl);
+            
             this.Close();
 
         }

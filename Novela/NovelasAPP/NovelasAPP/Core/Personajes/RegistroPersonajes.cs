@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace NovelasAPP.Core
+namespace NovelasAPP.Core.Personajes
 {
     class RegistroPersonajes
     {

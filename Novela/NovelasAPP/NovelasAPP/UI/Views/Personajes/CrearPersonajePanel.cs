@@ -1,4 +1,4 @@
-﻿using NovelasAPP.Core;
+﻿using NovelasAPP.Core.Personajes;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PersonajesNovelas.UI
+namespace NovelasAPP.UI.Views
 {
     class CrearPersonajePanel : Form
     {

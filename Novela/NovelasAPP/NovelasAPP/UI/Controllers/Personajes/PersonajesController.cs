@@ -1,4 +1,4 @@
-﻿using NovelasAPP.UI;
+﻿using NovelasAPP.UI.Views;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -7,39 +7,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PersonajesNovelas.UI
+namespace NovelasAPP.UI.Controllers
 {
     public class PersonajesController
     {
 
         public PersonajesController()
         {
-            this.View = new PersonajesView();
 
+            this.View = new PersonajesView();
             this.View.BtCrearPersonaje.Click += (sender, args) => this.ViewCrearPersonajePanel();
-            this.View.BtMostrarPersonajes.Click += (sender, args) => this.ViewMostrarPersonajesPanel();
             this.View.BtBorrarPersonajes.Click += (sender, args) => this.ViewBorrarPersonajesPanel();
+            
         }
 
         private void ViewBorrarPersonajesPanel()
         {
-            new BorrarPersonajesPanel().Show();
+            
+            new BorrarPersonajesPanel().ShowDialog();
+            this.View.IntroducirDatos();
         }
 
         private void ViewCrearPersonajePanel()
         {
-            new CrearPersonajePanel().Show();
+            
+            new CrearPersonajePanel().ShowDialog();
+            this.View.IntroducirDatos();
         }
-
-        private void ViewMostrarPersonajesPanel()
-        {
-            new MostrarPersonajesPanel().Show();
-        }
-
-        private void Menu()
-        {
-        }
-
 
         public PersonajesView View
         {

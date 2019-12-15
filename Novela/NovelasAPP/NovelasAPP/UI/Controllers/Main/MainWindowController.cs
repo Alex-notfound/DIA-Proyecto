@@ -1,5 +1,4 @@
-﻿using PersonajesNovelas;
-using PersonajesNovelas.UI;
+﻿using NovelasAPP.UI.Views;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -16,7 +15,11 @@ namespace NovelasAPP.UI.Controllers
         void Build()
         {
             MainView = new MainWindowView();
-            MainView.BtnPersonajes.Click += (sender, args) => this.BuildPersonajes(new PersonajesController()); MainView.Hide();
+            MainView.BtnPersonajes.Click += (sender, args) =>
+            {
+                this.BuildPersonajes(new PersonajesController());
+                MainView.Hide();
+            };
         }
 
         void BuildPersonajes(PersonajesController pj)
