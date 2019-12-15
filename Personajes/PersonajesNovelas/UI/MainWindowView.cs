@@ -54,22 +54,6 @@ namespace PersonajesNovelas
 
         }
 
-
-        /*
-        WFrms.Button BuildShow()
-        {
-
-            BtMostrarPersonajes = new Button
-            {
-                Text = "Mostrar personajes",
-                Dock = DockStyle.Top
-            };
-
-            return BtMostrarPersonajes;
-
-        }
-        */
-
         WFrms.Button BuildDelete()
         { 
 
