@@ -2,7 +2,19 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup />
   <ItemGroup>
+    <Compile Update="Core\Graficos\Grafico.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Controllers\Graficos\GraficosController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Graficos\GraficoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Graficos\GraficosView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\Views\Main\MainWindowView.cs">
