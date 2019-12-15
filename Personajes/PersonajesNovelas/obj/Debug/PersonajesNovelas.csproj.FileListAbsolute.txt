@@ -22,3 +22,8 @@ C:\Users\danid\Documents\4CUARTO\DIA\NovelasApp\Personajes\PersonajesNovelas\obj
 C:\Users\danid\Documents\4CUARTO\DIA\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.csproj.GenerateResource.cache
 C:\Users\danid\Documents\4CUARTO\DIA\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.exe
 C:\Users\danid\Documents\4CUARTO\DIA\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.pdb
+D:\spire\Documents\GitHub\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.csprojAssemblyReference.cache
+D:\spire\Documents\GitHub\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.Properties.Resources.resources
+D:\spire\Documents\GitHub\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.csproj.GenerateResource.cache
+D:\spire\Documents\GitHub\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.exe
+D:\spire\Documents\GitHub\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.pdb

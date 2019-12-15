@@ -9,19 +9,21 @@
   },
   "packageFolders": {
     "C:\\Users\\spire\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "E:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
+      "projectUniqueName": "D:\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
       "projectName": "NovelasAPP",
-      "projectPath": "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
+      "projectPath": "D:\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
       "packagesPath": "C:\\Users\\spire\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\obj\\",
+      "outputPath": "D:\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "E:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\spire\\AppData\\Roaming\\NuGet\\NuGet.Config",
