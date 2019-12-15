@@ -11,7 +11,7 @@ namespace PersonajesNovelas.UI
 {
     class BorrarPersonajesPanel : Form
     {
-
+        
         RegistroPersonajes Registro = new RegistroPersonajes();
         private object btBorrar;
 
@@ -115,6 +115,7 @@ namespace PersonajesNovelas.UI
             label1.Size = new Size(label1.PreferredWidth, label1.PreferredHeight);
             pnl.Controls.Add(label1);
             this.Controls.Add(pnl);
+            
             this.Close();
 
         }

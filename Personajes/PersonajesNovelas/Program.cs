@@ -18,6 +18,7 @@ namespace PersonajesNovelas
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainWindowController().View);
+            //Application.Run(new TablaMultifuncion());
         }
     }
 }

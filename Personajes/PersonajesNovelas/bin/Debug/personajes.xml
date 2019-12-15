@@ -1,2 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<personajes />
+<personajes>
+  <personaje nombre="dora" descripcion="exploradora" />
+  <personaje nombre="bob " descripcion="el constructor" />
+  <personaje nombre="Princesa" descripcion="de frozen" />
+  <personaje nombre="mari carmen" descripcion="tu hijo esta en el aferhour" />
+  <personaje nombre="jose mari" descripcion="el pescadero" />
+  <personaje nombre="Prueba 111" descripcion="prueba 1111" />
+</personajes>

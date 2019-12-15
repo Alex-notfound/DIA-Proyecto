@@ -14,37 +14,26 @@ namespace PersonajesNovelas.UI
 
         public MainWindowController()
         {
-            this.View = new MainWindowView();
 
+            this.View = new MainWindowView();
             this.View.BtCrearPersonaje.Click += (sender, args) => this.ViewCrearPersonajePanel();
-            this.View.BtMostrarPersonajes.Click += (sender, args) => this.ViewMostrarPersonajesPanel();
             this.View.BtBorrarPersonajes.Click += (sender, args) => this.ViewBorrarPersonajesPanel();
+            
         }
 
         private void ViewBorrarPersonajesPanel()
         {
-            new BorrarPersonajesPanel().Show();
+            
+            new BorrarPersonajesPanel().ShowDialog();
+            this.View.IntroducirDatos();
         }
 
         private void ViewCrearPersonajePanel()
         {
-            new CrearPersonajePanel().Show();
+            
+            new CrearPersonajePanel().ShowDialog();
+            this.View.IntroducirDatos();
         }
-
-        private void ViewMostrarPersonajesPanel()
-        {
-            new MostrarPersonajesPanel().Show();
-
-
-           
-        }
-
-        private void Menu()
-        {
-        }
-
-
-
 
         public MainWindowView View
         {

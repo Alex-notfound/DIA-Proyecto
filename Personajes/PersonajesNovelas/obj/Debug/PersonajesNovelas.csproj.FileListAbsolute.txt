@@ -14,3 +14,11 @@ C:\Users\danid\Documents\4CUARTO\DIA\PersonajesNovelas\PersonajesNovelas\obj\Deb
 C:\Users\danid\Documents\4CUARTO\DIA\PersonajesNovelas\PersonajesNovelas\obj\Debug\PersonajesNovelas.csproj.GenerateResource.cache
 C:\Users\danid\Documents\4CUARTO\DIA\PersonajesNovelas\PersonajesNovelas\obj\Debug\PersonajesNovelas.exe
 C:\Users\danid\Documents\4CUARTO\DIA\PersonajesNovelas\PersonajesNovelas\obj\Debug\PersonajesNovelas.pdb
+C:\Users\danid\Documents\4CUARTO\DIA\NovelasApp\Personajes\PersonajesNovelas\bin\Debug\PersonajesNovelas.exe.config
+C:\Users\danid\Documents\4CUARTO\DIA\NovelasApp\Personajes\PersonajesNovelas\bin\Debug\PersonajesNovelas.exe
+C:\Users\danid\Documents\4CUARTO\DIA\NovelasApp\Personajes\PersonajesNovelas\bin\Debug\PersonajesNovelas.pdb
+C:\Users\danid\Documents\4CUARTO\DIA\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.csprojAssemblyReference.cache
+C:\Users\danid\Documents\4CUARTO\DIA\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.Properties.Resources.resources
+C:\Users\danid\Documents\4CUARTO\DIA\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.csproj.GenerateResource.cache
+C:\Users\danid\Documents\4CUARTO\DIA\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.exe
+C:\Users\danid\Documents\4CUARTO\DIA\NovelasApp\Personajes\PersonajesNovelas\obj\Debug\PersonajesNovelas.pdb
