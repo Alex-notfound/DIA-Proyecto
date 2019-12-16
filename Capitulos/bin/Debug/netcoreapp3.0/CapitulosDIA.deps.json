@@ -6,15 +6,15 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v3.0": {
-      "ProyectoCapitulos/1.0.0": {
+      "CapitulosDIA/1.0.0": {
         "runtime": {
-          "ProyectoCapitulos.dll": {}
+          "CapitulosDIA.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "ProyectoCapitulos/1.0.0": {
+    "CapitulosDIA/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

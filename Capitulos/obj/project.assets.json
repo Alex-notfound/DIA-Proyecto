@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fufer\\RiderProjects\\ProyectoCapitulos\\ProyectoCapitulos\\ProyectoCapitulos.csproj",
-      "projectName": "ProyectoCapitulos",
-      "projectPath": "C:\\Users\\fufer\\RiderProjects\\ProyectoCapitulos\\ProyectoCapitulos\\ProyectoCapitulos.csproj",
+      "projectUniqueName": "C:\\Users\\fufer\\Downloads\\CapitulosDIA\\CapitulosDIA\\CapitulosDIA.csproj",
+      "projectName": "CapitulosDIA",
+      "projectPath": "C:\\Users\\fufer\\Downloads\\CapitulosDIA\\CapitulosDIA\\CapitulosDIA.csproj",
       "packagesPath": "C:\\Users\\fufer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fufer\\RiderProjects\\ProyectoCapitulos\\ProyectoCapitulos\\obj\\",
+      "outputPath": "C:\\Users\\fufer\\Downloads\\CapitulosDIA\\CapitulosDIA\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fufer\\AppData\\Roaming\\NuGet\\NuGet.Config",

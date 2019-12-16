@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\fufer\\RiderProjects\\ProyectoCapitulos\\ProyectoCapitulos\\ProyectoCapitulos.csproj",
-    "projectName": "ProyectoCapitulos",
-    "projectPath": "C:\\Users\\fufer\\RiderProjects\\ProyectoCapitulos\\ProyectoCapitulos\\ProyectoCapitulos.csproj",
-    "outputPath": "C:\\Users\\fufer\\RiderProjects\\ProyectoCapitulos\\ProyectoCapitulos\\obj\\",
+    "projectUniqueName": "C:\\Users\\fufer\\Downloads\\CapitulosDIA\\CapitulosDIA\\CapitulosDIA.csproj",
+    "projectName": "CapitulosDIA",
+    "projectPath": "C:\\Users\\fufer\\Downloads\\CapitulosDIA\\CapitulosDIA\\CapitulosDIA.csproj",
+    "outputPath": "C:\\Users\\fufer\\Downloads\\CapitulosDIA\\CapitulosDIA\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.0"
