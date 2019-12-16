@@ -8,48 +8,54 @@ namespace NovelasAPP.Core.Capitulos
     {
         public Capitulo(string titulo, string notas)
         {
-            this.Titulo = titulo;
-            this.Notas = notas;
-            Secciones = new List<Seccion>();
+            this.titulo = titulo;
+            this.notas = notas;
+            this.secciones = new List<Seccion>();
         }
 
-        public string Titulo
+        public string titulo
+        {
+            get; set;
+        }
+        
+        public string notas
         {
             get; set;
         }
 
-        public string Notas
+        public List<Seccion> secciones
         {
             get; set;
         }
 
-        public List<Seccion> Secciones
+        public void addSeccion(string notasSeccion, string textoSeccion)
         {
-            get; set;
+            secciones.Add(new Seccion(notasSeccion, textoSeccion));
         }
 
-        public void AddSeccion(string notasSeccion, string textoSeccion)
-        {
-            Secciones.Add(new Seccion(notasSeccion, textoSeccion));
-        }
-
-        public string PrintSecciones()
+        public string printSecciones()
         {
             StringBuilder toret = new StringBuilder();
-            foreach (var seccion in Secciones)
+            
+            foreach (var seccion in secciones)
             {
-                toret.Append(seccion);
+                toret.Append(seccion.ToString() + '\n');
             }
 
             return toret.ToString();
         }
+        
 
         public override string ToString()
         {
             StringBuilder toret = new StringBuilder();
-            toret.Append(Titulo + '\n');
-            toret.Append(Notas + '\n');
-            toret.Append(PrintSecciones());
+            toret.Append("CAPITULO" + '\n');
+            toret.Append(this.titulo + '\n');
+            toret.Append("---Notas" + '\n');
+            toret.Append(this.notas + '\n');
+
+            toret.Append(this.printSecciones());
+
             return toret.ToString();
         }
     }

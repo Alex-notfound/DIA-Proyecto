@@ -20,6 +20,18 @@ namespace NovelasAPP.UI.Controllers
                 this.BuildPersonajes(new PersonajesController());
                 MainView.Hide();
             };
+            MainView.BtnCapitulos.Click += (sender, args) =>
+            {
+                this.BuildCapitulos(new PanelDataGridController());
+                MainView.Hide();
+            };
+        }
+
+        void BuildCapitulos(PanelDataGridController pdg)
+        {
+            PanelDataGridView view = pdg.View;
+            view.Show();
+            view.FormClosed += (sender, args) => MainView.Show();
         }
 
         void BuildPersonajes(PersonajesController pj)

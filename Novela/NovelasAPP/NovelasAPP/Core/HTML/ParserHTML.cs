@@ -104,10 +104,10 @@ namespace NovelasAPP.Core.HTML
 
             foreach (Capitulo cap in capitulos)
             {
-                html += "\n\t<h1>" + cap.Titulo + "</h1>\n";
-                foreach (Seccion sec in cap.Secciones)
+                html += "\n\t<h1>" + cap.titulo + "</h1>\n";
+                foreach (Seccion sec in cap.secciones)
                 {
-                    html += "\r\n\t<section>" + CastToHTML(sec.Texto) + "\n\t</section>";
+                    html += "\r\n\t<section>" + CastToHTML(sec.texto) + "\n\t</section>";
                 }
                 html += "\n";
             }
