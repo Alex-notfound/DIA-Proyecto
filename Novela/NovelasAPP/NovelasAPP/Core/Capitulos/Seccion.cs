@@ -4,23 +4,23 @@
     {
         public Seccion(string notas, string texto)
         {
-            this.Notas = notas;
-            this.Texto = texto;
+            this.notas = notas;
+            this.texto = texto;
         }
 
-        public string Notas
+        public string notas
         {
             get; set;
         }
 
-        public string Texto
+        public string texto
         {
             get; set;
         }
 
         public override string ToString()
         {
-            return Texto + "\n";
+            return texto + "\n";
         }
     }
 }

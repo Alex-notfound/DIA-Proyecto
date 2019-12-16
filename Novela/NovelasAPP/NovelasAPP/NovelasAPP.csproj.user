@@ -11,6 +11,18 @@
     <Compile Update="UI\Controllers\Graficos\GraficosController.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI\Views\Capitulos\AddCapView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Capitulos\AddSeccionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Capitulos\EditCapView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Capitulos\PanelDataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UI\Views\Graficos\GraficoWindow.cs">
       <SubType>Form</SubType>
     </Compile>
