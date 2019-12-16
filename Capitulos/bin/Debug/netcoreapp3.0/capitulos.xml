@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <capitulos>
-  <capitulo titulo="xccxcx" nota="nota2">
-    <seccion nota="seccion2" texto="esta es la seccion2" />
+  <capitulo titulo="1" nota="2">
+    <seccion nota="actu" texto="actualizado" />
     <seccion nota="v" texto="v" />
   </capitulo>
   <capitulo titulo="capitulo3" nota="notas">
