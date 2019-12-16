@@ -1,4 +1,4 @@
-﻿namespace ProyectoCapitulos.Core
+﻿namespace CapitulosDIA.Core
 {
     public class Seccion
     {

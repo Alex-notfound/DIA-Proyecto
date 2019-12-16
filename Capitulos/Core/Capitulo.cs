@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace ProyectoCapitulos.Core
+namespace CapitulosDIA.Core
 {
     public class Capitulo
     {
@@ -36,19 +36,24 @@ namespace ProyectoCapitulos.Core
         public string printSecciones()
         {
             StringBuilder toret = new StringBuilder();
+            
             foreach (var seccion in secciones)
             {
-                toret.Append(seccion);
+                toret.Append(seccion.ToString() + '\n');
             }
 
             return toret.ToString();
         }
+        
 
         public override string ToString()
         {
             StringBuilder toret = new StringBuilder();
+            toret.Append("CAPITULO" + '\n');
             toret.Append(this.titulo + '\n');
+            toret.Append("---Notas" + '\n');
             toret.Append(this.notas + '\n');
+
             toret.Append(this.printSecciones());
 
             return toret.ToString();

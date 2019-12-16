@@ -1,13 +1,13 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Xml;
 using System.Collections;
+using System.Linq;
 using System.Xml.Linq;
 
-namespace ProyectoCapitulos.Core
+namespace CapitulosDIA.Core
 {
     public class RegistroCapitulos : ICollection<Capitulo>
     {
@@ -41,10 +41,20 @@ namespace ProyectoCapitulos.Core
             return this.capitulos.Remove(c);
         }
 
-        /// <summary>
-        /// Elimina un viaje en la pos. i.
-        /// </summary>
-        /// <param name="i">La pos. a eliminar</param>
+        public void AddSeccion(String titulo, String notas, String texto)
+        {
+            Capitulo c = this.GetCapitulo(titulo);
+            c.addSeccion(notas, texto);
+            //capitulos[capitulos.IndexOf(c)].addSeccion(notas,texto);
+            //this.Actualiza(c);
+        }
+        public void Actualiza(Capitulo c)
+        {
+            capitulos.RemoveAll(x => x.titulo == c.titulo);
+            capitulos.Add(c);
+        }
+
+
 		public void RemoveAt(int i)
         {
             this.capitulos.RemoveAt(i);
@@ -120,25 +130,19 @@ namespace ProyectoCapitulos.Core
 
             foreach (Capitulo c in this.capitulos)
             {
-                toret.Append("Capitulo");
                 toret.AppendLine(c.ToString());
             }
 
             return toret.ToString();
         }
 
-        /// <summary>
-        /// Guarda la lista de viajes como xml.
-        /// </summary>
+
         public void GuardaXml()
         {
             this.GuardaXml(ArchivoXml);
         }
 
-        /// <summary>
-        /// Guarda la lista de viajes como XML.
-        /// <param name="nf">El nombre del archivo.</param>
-        /// </summary>
+
         public void GuardaXml(string nf)
         {
             var doc = new XDocument();
@@ -147,30 +151,29 @@ namespace ProyectoCapitulos.Core
             foreach (Capitulo capitulo in this.capitulos)
             {
                 var secciones = capitulo.secciones;
+                XElement cap = new XElement(EtqCapitulo, 
+                    new XAttribute(EtqTitulo, capitulo.titulo),
+                    new XAttribute(EtqNotas, capitulo.notas)
+                );
+                
+                
                 foreach (var seccion in secciones)
                 {
-                    root.Add(new XElement(EtqCapitulo, 
-                                            new XAttribute(EtqTitulo, capitulo.titulo),
-                                            new XAttribute(EtqNotas, capitulo.notas),
-                                            new XElement(EtqSeccion,
-                                                new XAttribute(EtqNotas, seccion.notas),
-                                                new XAttribute(EtqTexto, seccion.texto)
-                                            )
-                                          )
-                    );
+                    cap.Add(new XElement(EtqSeccion,
+                        new XAttribute(EtqNotas, seccion.notas),
+                        new XAttribute(EtqTexto, seccion.texto)
+                    ));
+
                 }
+                
+                root.Add(cap);
             }
 
             doc.Add(root);
             doc.Save(nf);
         }
 
-        /// <summary>
-        /// Recupera los viajes desde un archivo XML.
-        /// </summary>
-        /// <returns>Un <see cref="RegistroViajes"/> con los
-        /// <see cref="Viaje"/>'s.</returns>
-        /// <param name="f">El nombre del archivo.</param>
+
 		public static RegistroCapitulos RecuperaXml(string f)
         {
             var toret = new RegistroCapitulos();
@@ -213,13 +216,7 @@ namespace ProyectoCapitulos.Core
         }
 
         public List<Capitulo> capitulos { get; set; }
-
-        /// <summary>
-        /// Crea un registro de viajes con la lista de viajes recuperada
-        /// del archivo por defecto.
-        /// </summary>
-        /// <returns>Un <see cref="RegistroViajes"/>.</returns>
-		public static RegistroCapitulos RecuperaXml()
+        public static RegistroCapitulos RecuperaXml()
         {
             return RecuperaXml(ArchivoXml);
         }

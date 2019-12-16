@@ -7,10 +7,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoCapitulos")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("CapitulosDIA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
-[assembly: System.Reflection.AssemblyProductAttribute("ProyectoCapitulos")]
-[assembly: System.Reflection.AssemblyTitleAttribute("ProyectoCapitulos")]
+[assembly: System.Reflection.AssemblyProductAttribute("CapitulosDIA")]
+[assembly: System.Reflection.AssemblyTitleAttribute("CapitulosDIA")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
