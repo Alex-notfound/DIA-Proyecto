@@ -55,6 +55,7 @@ namespace NovelasAPP.UI.Views
             
             this.dataGrid = new WFrms.DataGridView()
             {
+                AllowUserToDeleteRows = false,
                 AllowUserToAddRows = false,
                 AutoSizeColumnsMode = WFrms.DataGridViewAutoSizeColumnsMode.Fill,
                 Dock = WFrms.DockStyle.Fill,
