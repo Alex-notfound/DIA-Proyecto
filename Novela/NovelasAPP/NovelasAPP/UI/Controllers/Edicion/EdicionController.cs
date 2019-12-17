@@ -26,38 +26,36 @@ namespace NovelasAPP.UI.Controllers
             edicionView.btnCursiva.Click += (sender, args) => cursiveText(edicionView.tbEdicion.SelectionStart, edicionView.tbEdicion.SelectionLength);
             edicionView.btnNegrita.Click += (sender, args) => boldText(edicionView.tbEdicion.SelectionStart, edicionView.tbEdicion.SelectionLength);
 
-            edicionView.btnNuevoCap.Click += (sender, args) => 
-            { 
-                capitulos.Add(AddCapitulo());
-                edicionView.refreshView(capActual);
-                //edicionView.Close();
-                //edicionView = new EdicionView(capActual);
-                //edicionView.Show();
-            };
+            //edicionView.btnNuevoCap.Click += (sender, args) => 
+            //{ 
+            //    capitulos.Add(AddCapitulo());
+            //    edicionView.refreshView(capActual);
+            //    //edicionView.Close();
+            //    //edicionView = new EdicionView(capActual);
+            //    //edicionView.Show();
+            //};
 
-            edicionView.btnNuevaSec.Click += (sender, args) =>
+            edicionView.FormClosed += (sender, args) =>
             {
                 if (!edicionView.tbEdicion.Text.Equals(seccionActual.texto))
                 {
-                    DialogResult result = MessageBox.Show("¿Desea guardar los cambios?", "Advertencia", MessageBoxButtons.YesNoCancel);
+                    DialogResult result = MessageBox.Show("¿Desea guardar los cambios?", "Advertencia", MessageBoxButtons.YesNo);
 
                     switch (result)
                     {
                         case DialogResult.Yes:
                             this.save(registroCapitulos,capActual,seccionActual);
-                            addSeccion(registroCapitulos, registroPersonajes, capActual);
+                            //addSeccion(registroCapitulos, registroPersonajes, capActual);
                             break;
                         case DialogResult.No:
-                            addSeccion(registroCapitulos, registroPersonajes, capActual);
-                            break;
-                        case DialogResult.Cancel:
+                            //addSeccion(registroCapitulos, registroPersonajes, capActual);
                             break;
                     }
                 }
-                else
-                {
-                    addSeccion(registroCapitulos, registroPersonajes, capActual);
-                };
+                //else
+                //{
+                //    addSeccion(registroCapitulos, registroPersonajes, capActual);
+                //};
             };
 
             edicionView.lvCapitulos.ItemActivate += (sender, args) => showNotas(edicionView.lvCapitulos, edicionView.lvCapitulos.SelectedItems[0].Text, capitulos);

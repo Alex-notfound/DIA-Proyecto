@@ -43,13 +43,13 @@ namespace NovelasAPP.UI.Views
 
             SeccionesPanel(capituloActual.secciones);
 
-            mainPanel.Controls.Add(topPanel, 0, 0);
+            //mainPanel.Controls.Add(topPanel, 0, 0);
             mainPanel.Controls.Add(escrituraTable, 0, 1);
             mainPanel.Controls.Add(lvSecciones, 1, 2);
 
             mainPanel.Controls.Add(panelNotas, 1, 4);
 
-            mainPanel.SetColumnSpan(topPanel, 2);
+            //mainPanel.SetColumnSpan(topPanel, 2);
             mainPanel.SetRowSpan(escrituraTable, mainPanel.RowCount - 1);
 
             mainPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60));
