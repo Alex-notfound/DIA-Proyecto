@@ -6,6 +6,7 @@ using WFrms = System.Windows.Forms;
 namespace NovelasAPP.UI.Controllers
 {
     using NovelasAPP.Core.Capitulos;
+    using NovelasAPP.UI.Graficos;
     using NovelasAPP.UI.Views;
     using System;
     
@@ -22,8 +23,11 @@ namespace NovelasAPP.UI.Controllers
             this.View.addBtn.Click += (sender, e) =>
                 AddCapitulo(rc);
 
+            //this.View.listBtn.Click += (sender, e) =>
+            //    ListarCapitulos();
+
             this.View.listBtn.Click += (sender, e) =>
-                ListarCapitulos();
+                new GraficosController(rc.capitulos).View.Show(); ;
 
             this.View.seccionBtn.Click += (sender, e) =>
                 AddSeccion(rc, this.View.dataGrid.SelectedRows[0].Cells[0].Value.ToString());

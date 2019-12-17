@@ -47,12 +47,12 @@ namespace NovelasAPP.UI.Views
             this.Text = titulo + " - Notas";
         }
 
-        public static Label BuildNotas(string num, string texto)
+        public static Label BuildNotas(string texto)
         {
             Label lblSeccion = new Label
             {
                 Dock = DockStyle.Fill,
-                Text = "Nota " + num + ": " + texto
+                Text = texto
             };
 
             return lblSeccion;

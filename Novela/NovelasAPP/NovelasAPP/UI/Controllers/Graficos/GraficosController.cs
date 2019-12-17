@@ -19,9 +19,9 @@ namespace NovelasAPP.UI.Graficos
             this.View = new GraficosView();
 
             
-            this.View.btnGenerarCapitulos.Click += (sender, args) => new GraficoWindow(ListaPorCapitulos(ListaCapitulos)).Show(); 
+            this.View.btnGenerarCapitulos.Click += (sender, args) => new PalabrasWindow(ListaPorCapitulos(ListaCapitulos)).Show(); 
             this.View.btnGenerarCapitulos.Click += (sender, args) => new GraficoWindow(ListaPorCapitulosCar(ListaCapitulos)).Show();
-            this.View.btnGenerarSecciones.Click += (sender, args) => new GraficoWindow(ListaPorSecciones(ListaCapitulos)).Show(); 
+            this.View.btnGenerarSecciones.Click += (sender, args) => new PalabrasWindow(ListaPorSecciones(ListaCapitulos)).Show(); 
             this.View.btnGenerarSecciones.Click += (sender, args) => new GraficoWindow(ListaPorSeccionesCar(ListaCapitulos)).Show();
         }
 

@@ -14,19 +14,19 @@ namespace NovelasAPP.UI.Views
 {
     public partial class EdicionView : Form
     {
-        public EdicionView(Capitulo capituloActual, String titulo)
+        public EdicionView(Capitulo capituloActual, string titulo, string notas)
         {
             this.mainPanel = new TableLayoutPanel
             {
                 Dock = DockStyle.Fill,
                 ColumnCount = 10,
-                RowCount = 4,
+                RowCount = 5,
                 CellBorderStyle = TableLayoutPanelCellBorderStyle.None
             };
 
             TableLayoutPanel topPanel = this.topPanel();
             TableLayoutPanel escrituraTable = this.tlpEscritura();
-
+            TableLayoutPanel panelNotas = NotasPanel(notas);
 
             if (EdicionController.capitulos != null)
             {
@@ -40,17 +40,21 @@ namespace NovelasAPP.UI.Views
                 mainPanel.Controls.Add(lvPersonajes, 1, 3);
             }
 
+
             SeccionesPanel(capituloActual.secciones);
 
             mainPanel.Controls.Add(topPanel, 0, 0);
             mainPanel.Controls.Add(escrituraTable, 0, 1);
             mainPanel.Controls.Add(lvSecciones, 1, 2);
 
+            mainPanel.Controls.Add(panelNotas, 1, 4);
+
             mainPanel.SetColumnSpan(topPanel, 2);
             mainPanel.SetRowSpan(escrituraTable, mainPanel.RowCount - 1);
 
             mainPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 60));
-            mainPanel.RowStyles.Add(new RowStyle(SizeType.AutoSize)); ;
+            mainPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20));
+            mainPanel.RowStyles.Add(new RowStyle(SizeType.AutoSize));
 
 
 
@@ -82,6 +86,35 @@ namespace NovelasAPP.UI.Views
             //this.lvCapitulos.ItemActivate += (sender, args) => MessageBox.Show("Funcionaaa");
             this.lvCapitulos.Columns.Add("Capitulos", -2, HorizontalAlignment.Left);
             this.lvCapitulos.Items.AddRange(listaItems);
+        }
+
+        TableLayoutPanel NotasPanel(string notas)
+        {
+            TableLayoutPanel pnl = new TableLayoutPanel
+            {
+                ColumnCount = 1,
+                RowCount = 2,
+                Dock = DockStyle.Fill,
+                BorderStyle = BorderStyle.FixedSingle
+            };
+
+            this.tbNotas = new TextBox
+            { 
+                Dock = DockStyle.Fill,
+                ReadOnly = true,
+                Text = notas
+            };
+
+            pnl.Controls.Add(new Label()
+            {
+                Dock = DockStyle.Fill,
+                Text = "Notas",
+                BorderStyle = BorderStyle.FixedSingle
+            }, 0, 0);
+            pnl.Controls.Add(this.tbNotas, 0, 1);
+
+            return pnl;
+
         }
 
         void PersonajesPanel(List<Personaje> personajes)
@@ -268,6 +301,11 @@ namespace NovelasAPP.UI.Views
         }
 
         public ListView lvPersonajes
+        {
+            get; set;
+        }
+
+        public TextBox tbNotas
         {
             get; set;
         }

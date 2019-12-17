@@ -81,7 +81,7 @@ namespace NovelasAPP.UI.Views
             this.listBtn = new WFrms.Button
             {
                 AutoSize = true,
-                Text = "Listar"
+                Text = "Graficas"
             };
 
             pnl.Controls.Add(this.listBtn);

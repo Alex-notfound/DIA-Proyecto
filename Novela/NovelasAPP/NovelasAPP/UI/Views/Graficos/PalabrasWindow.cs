@@ -9,16 +9,16 @@ using System.Windows.Forms;
 
 namespace NovelasAPP.UI.Views
 {
-    public partial class GraficoWindow : Form
+    public partial class PalabrasWindow : Form
     {
         public const int ChartCanvasSize = 512;
-        public GraficoWindow(List<int> valoresPalabras)
+        public PalabrasWindow(List<int> valoresPalabras)
         {
             this.Build();
 
-            this.Chart.LegendY = "Caracteres";
+            this.Chart.LegendY = "Palabras";
             this.Chart.LegendX = "Capitulos / Secciones";
-            this.Chart.Values = valoresPalabras.ToArray(); 
+            this.Chart.Values = valoresPalabras.ToArray();
 
             this.Chart.Draw();
         }

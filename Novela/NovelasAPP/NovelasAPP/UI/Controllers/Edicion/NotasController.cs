@@ -8,17 +8,12 @@ namespace NovelasAPP.UI.Controllers
 {
     public class NotasController
     {
-        public void showNotas(List<string> notas, string titulo)
+        public void showNotas(string notas, string titulo)
         {
             List<Label> lblNotas = new List<Label>();
 
 
-            int i = 1;
-            foreach (string nota in notas)
-            {
-                lblNotas.Add(ListaNotasView.BuildNotas(i.ToString(), nota));
-                i++;
-            }
+                lblNotas.Add(ListaNotasView.BuildNotas(notas));
 
             ListaNotasView notasList = new ListaNotasView(titulo, lblNotas);
 

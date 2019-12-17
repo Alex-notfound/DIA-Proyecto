@@ -17,7 +17,7 @@ namespace NovelasAPP.UI.Controllers
             capitulos = registroCapitulos.capitulos;
             personajes = registroPersonajes.Personajes;
 
-            edicionView = new EdicionView(capActual, titulo);
+            edicionView = new EdicionView(capActual, titulo, seccionActual.notas);
 
 
             edicionView.tbEdicion.Text = seccionActual.texto;
@@ -61,9 +61,9 @@ namespace NovelasAPP.UI.Controllers
                 };
             };
 
-            //edicionView.lvCapitulos.ItemActivate += (sender, args) => showNotas(edicionView.lvCapitulos, edicionView.lvCapitulos.SelectedItems[0].Text, capitulos);
-            //edicionView.lvSecciones.ItemActivate += (sender, args) => showNotas(edicionView.lvSecciones, edicionView.lvSecciones.SelectedItems[0].Text, capActual.secciones);
-            //edicionView.lvPersonajes.ItemActivate += (sender, args) => showNotas(edicionView.lvPersonajes, edicionView.lvPersonajes.SelectedItems[0].Text, personajes);
+            edicionView.lvCapitulos.ItemActivate += (sender, args) => showNotas(edicionView.lvCapitulos, edicionView.lvCapitulos.SelectedItems[0].Text, capitulos);
+            edicionView.lvSecciones.ItemActivate += (sender, args) => showNotas(edicionView.lvSecciones, edicionView.lvSecciones.SelectedItems[0].Text, capActual.secciones);
+            edicionView.lvPersonajes.ItemActivate += (sender, args) => showNotas(edicionView.lvPersonajes, edicionView.lvPersonajes.SelectedItems[0].Text, personajes);
 
         }
 
@@ -112,31 +112,31 @@ namespace NovelasAPP.UI.Controllers
             seccionActual.texto = edicionView.tbEdicion.Text;
             //MessageBox.Show(this.edicionView.tbEdicion.Text);
             rc.capitulos[rc.capitulos.IndexOf(cap)].editarSeccion(seccionActual.texto, this.edicionView.tbEdicion.Text,
-                this.edicionView.tbEdicion.Text);
-            MessageBox.Show("Guardado correctamente","Guardado", MessageBoxButtons.OK);
+                "");
+            MessageBox.Show("Guardado correctamente", "Guardado", MessageBoxButtons.OK);
             seccionActual.texto = edicionView.tbEdicion.Text;
         }
 
-        //private void showNotas(ListView listView, string text, List<Capitulo> listaCapitulos)
-        //{
-        //    Capitulo cap = listaCapitulos[listView.FindItemWithText(text).Index];
+        private void showNotas(ListView listView, string text, List<Capitulo> listaCapitulos)
+        {
+            Capitulo cap = listaCapitulos[listView.FindItemWithText(text).Index];
 
-        //    new NotasController().showNotas(cap.Notas, cap.Titulo);
-        //}
+            new NotasController().showNotas(cap.notas, cap.titulo);
+        }
 
-        //private void showNotas(ListView listView, string text, List<Personaje> listaPersonaje)
-        //{
-        //    Personaje pej = listaPersonaje[listView.FindItemWithText(text).Index];
+        private void showNotas(ListView listView, string text, List<Personaje> listaPersonaje)
+        {
+            Personaje pej = listaPersonaje[listView.FindItemWithText(text).Index];
 
-        //    new NotasController().showNotas(pej.Notas, pej.Nombre);
-        //}
+            new NotasController().showNotas(pej.Descripcion, pej.Nombre);
+        }
 
-        //private void showNotas(ListView listView, string text, List<Seccion> listaSecciones)
-        //{
-        //    Seccion sec = listaSecciones[listView.FindItemWithText(text).Index];
+        private void showNotas(ListView listView, string text, List<Seccion> listaSecciones)
+        {
+            Seccion sec = listaSecciones[listView.FindItemWithText(text).Index];
 
-        //    new NotasController().showNotas(sec.Notas, "Seccion " + listView.FindItemWithText(text).Index + 1 );
-        //}
+            new NotasController().showNotas(sec.notas, "Seccion " + listView.FindItemWithText(text).Index + 1);
+        }
 
         private void cursiveText(int index, int len)
         {
