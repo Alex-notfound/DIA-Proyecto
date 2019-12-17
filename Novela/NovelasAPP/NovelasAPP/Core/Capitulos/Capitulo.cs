@@ -58,6 +58,12 @@ namespace NovelasAPP.Core.Capitulos
             editar.notas = notas;
         }
 
+        public void eliminarSeccion(string texto)
+        {
+            Seccion eliminar = recuperarSeccion(texto);
+            this.secciones.Remove(eliminar);
+        }
+
         public override string ToString()
         {
             StringBuilder toret = new StringBuilder();

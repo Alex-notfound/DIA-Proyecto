@@ -20,6 +20,9 @@ namespace NovelasAPP.UI.Controllers
             
             this.View.dataGrid.CellDoubleClick += (sender, e) =>
                 EditSeccion(rc, capitulo, e.RowIndex);
+
+            this.View.dataGrid.UserDeletedRow += (sender, e) =>
+                BorrarSeccion(rc, capitulo, e.Row.Cells[0].Value.ToString());
             
             this.View.ShowDialog();
             capitulo = rc.GetCapitulo(cap);
@@ -57,6 +60,12 @@ namespace NovelasAPP.UI.Controllers
             editView.Show();
             editView.FormClosed += (sender, args) => this.Actualiza(c); 
             /*this.Actualiza(c);*/
+        }
+
+        public void BorrarSeccion(RegistroCapitulos rc, Capitulo cap, string seccion)
+        {
+            cap.eliminarSeccion(seccion);
+            this.Actualiza(cap);
         }
         
         
