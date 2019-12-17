@@ -44,7 +44,18 @@ namespace NovelasAPP.Core.Capitulos
 
             return toret.ToString();
         }
-        
+
+        public Seccion recuperarSeccion(string s)
+        {
+            return secciones.Find(seccion => seccion.texto == s);
+        }
+
+        public void editarSeccion(string texto, string textonuevo, string notas)
+        {
+            Seccion editar = recuperarSeccion(texto);
+            editar.texto = textonuevo;
+            editar.notas = notas;
+        }
 
         public override string ToString()
         {

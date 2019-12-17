@@ -27,6 +27,9 @@ namespace NovelasAPP.UI.Controllers
 
             this.View.seccionBtn.Click += (sender, e) =>
                 AddSeccion(rc, this.View.dataGrid.SelectedRows[0].Cells[0].Value.ToString());
+
+            this.View.dataGrid.CellDoubleClick += (sender, e) =>
+                AbrirSecciones(e.RowIndex);
             
             this.View.FormClosing += (sender, e) => this.Guardar();
 
@@ -76,8 +79,12 @@ namespace NovelasAPP.UI.Controllers
 
             this.rc = rc;
         }
-        
-        
+
+        public void AbrirSecciones(int row)
+        {
+            //WFrms.MessageBox.Show("doble");
+            new SeccionesDataGridController(rc, this.View.dataGrid.Rows[row].Cells[0].Value.ToString());
+        }
         
         public void Guardar()
         {
