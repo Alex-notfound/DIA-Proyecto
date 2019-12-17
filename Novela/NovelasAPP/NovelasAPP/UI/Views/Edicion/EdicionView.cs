@@ -28,14 +28,14 @@ namespace NovelasAPP.UI.Views
             TableLayoutPanel escrituraTable = this.tlpEscritura();
 
             CapitulosPanel(EdicionController.capitulos);
-            PersonajesPanel(EdicionController.personajes);
+            //PersonajesPanel(EdicionController.personajes);
             SeccionesPanel(capituloActual.secciones);
 
             mainPanel.Controls.Add(topPanel, 0, 0);
             mainPanel.Controls.Add(escrituraTable, 0, 1);
             mainPanel.Controls.Add(lvCapitulos, 1, 1);
             mainPanel.Controls.Add(lvSecciones, 1, 2);
-            mainPanel.Controls.Add(lvPersonajes, 1, 3);
+            //mainPanel.Controls.Add(lvPersonajes, 1, 3);
 
             mainPanel.SetColumnSpan(topPanel, 2);
             mainPanel.SetRowSpan(escrituraTable, mainPanel.RowCount - 1);

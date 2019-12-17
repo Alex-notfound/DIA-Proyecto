@@ -51,7 +51,8 @@ namespace NovelasAPP.UI.Controllers
         public void EditSeccion(RegistroCapitulos rc,Capitulo c,int row)
         {
             var seccion = this.View.dataGrid.Rows[row].Cells[0].Value.ToString(); 
-            new EditSeccionController(rc, c, seccion);
+            //new EditSeccionController(rc, c, seccion);
+            new EdicionController(rc.capitulos, null, c, new Seccion("", seccion)).edicionView.Show();
             this.Actualiza(c);
         }
         
