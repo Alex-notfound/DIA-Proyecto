@@ -76,7 +76,12 @@ namespace PersonajesNovelas.UI
 
             try
             {
-                btBorrar.Click += (sender, args) => borrarUnicoPersonaje(listaPersonajes.SelectedItem.ToString());
+
+             btBorrar.Click += (sender, args) => { 
+                 if (listaPersonajes.SelectedItem != null)
+                 { borrarUnicoPersonaje(listaPersonajes.SelectedItem.ToString());
+                 }
+             };
                 
             }catch(NullReferenceException e)
             {
