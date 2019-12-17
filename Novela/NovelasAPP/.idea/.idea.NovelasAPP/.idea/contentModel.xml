@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\fufer\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\fufer\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_NovelasAPP.984325918.00" t="ExcludeRecursive" />
+    <e p="C:\Users\fufer\Documents\GitHub\NovelasApp\Novela\NovelasApp" t="IncludeFlat">
+      <e p="NovelasApp" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Core" t="Include">
+          <e p="Capitulos" t="Include">
+            <e p="Capitulo.cs" t="Include" />
+            <e p="RegistroCapitulos.cs" t="Include" />
+            <e p="Seccion.cs" t="Include" />
+          </e>
+          <e p="Graficos" t="Include">
+            <e p="Grafico.cs" t="Include" />
+          </e>
+          <e p="HTML" t="Include">
+            <e p="ParserHTML.cs" t="Include" />
+          </e>
+          <e p="Personajes" t="Include">
+            <e p="Personaje.cs" t="Include" />
+            <e p="RegistroPersonajes.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="NovelasAPP.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="NovelasAPP.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="UI" t="Include">
+          <e p="Controllers" t="Include">
+            <e p="Capitulos" t="Include">
+              <e p="AddCapController.cs" t="Include" />
+              <e p="AddSeccionController.cs" t="Include" />
+              <e p="EditCapController.cs" t="Include" />
+              <e p="EditSeccionController.cs" t="Include" />
+              <e p="PanelDataGridController.cs" t="Include" />
+              <e p="SeccionesDataGridController.cs" t="Include" />
+            </e>
+            <e p="Edicion" t="Include">
+              <e p="EdicionController.cs" t="Include" />
+              <e p="NotasController.cs" t="Include" />
+            </e>
+            <e p="Graficos" t="Include">
+              <e p="GraficosController.cs" t="Include" />
+            </e>
+            <e p="Main" t="Include">
+              <e p="MainWindowController.cs" t="Include" />
+            </e>
+            <e p="Personajes" t="Include">
+              <e p="PersonajesController.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Views" t="Include">
+            <e p="Capitulos" t="Include">
+              <e p="AddCapView.cs" t="Include" />
+              <e p="AddSeccionView.cs" t="Include" />
+              <e p="EditCapView.cs" t="Include" />
+              <e p="EditSeccionView.cs" t="Include" />
+              <e p="PanelDataGridView.cs" t="Include" />
+              <e p="SeccionesDataGridView.cs" t="Include" />
+            </e>
+            <e p="Edicion" t="Include">
+              <e p="EdicionView.cs" t="Include" />
+              <e p="ListaNotasView.cs" t="Include" />
+              <e p="NuevoCapituloView.cs" t="Include" />
+            </e>
+            <e p="Graficos" t="Include">
+              <e p="GraficosView.cs" t="Include" />
+              <e p="GraficoWindow.cs" t="Include" />
+            </e>
+            <e p="Main" t="Include">
+              <e p="MainWindowView.cs" t="Include" />
+              <e p="MainWindowView.Designer.cs" t="Include" />
+            </e>
+            <e p="Personajes" t="Include">
+              <e p="BorrarPeresonajesPanel.cs" t="Include" />
+              <e p="CrearPersonajePanel.cs" t="Include" />
+              <e p="PersonajesView.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="NovelasAPP.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

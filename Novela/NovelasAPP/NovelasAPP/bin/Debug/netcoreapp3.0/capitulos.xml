@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <capitulos>
-  <capitulo titulo="capitulo1" nota="nota1">
-    <seccion nota="seccion1" texto="esta es la seccion1" />
+  <capitulo titulo="capitulo1" nota="nota1dsaads">
+    <seccion nota="esta es la seccion1adsdasdsadas" texto="esta es la seccion1adsdasdsadas" />
+    <seccion nota="dads" texto="dsdas" />
   </capitulo>
   <capitulo titulo="capitulo2" nota="nota1">
     <seccion nota="seccion2" texto="esta es **la** *seccion2*" />
-	<seccion nota="seccion3" texto="esta es la seccion3" />
+    <seccion nota="seccion3" texto="esta es la seccion3" />
     <seccion nota="seccion4" texto="esta es la seccion4" />
-
   </capitulo>
+  <capitulo titulo="adsdas" nota="qdadsasd" />
 </capitulos>

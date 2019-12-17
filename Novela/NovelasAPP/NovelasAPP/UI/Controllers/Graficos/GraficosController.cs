@@ -32,7 +32,7 @@ namespace NovelasAPP.UI.Graficos
 
             foreach(Capitulo c in capitulos)
             {
-                palabrasPorCapitulo.Add(PalabrasCapitulo(c.Secciones));
+                palabrasPorCapitulo.Add(PalabrasCapitulo(c.secciones));
 
             }
 
@@ -46,7 +46,7 @@ namespace NovelasAPP.UI.Graficos
 
             foreach (Capitulo c in capitulos)
             {
-                carPorCapitulo.Add(CaracteresCapitulo(c.Secciones));
+                carPorCapitulo.Add(CaracteresCapitulo(c.secciones));
 
             }
 
@@ -61,9 +61,9 @@ namespace NovelasAPP.UI.Graficos
             foreach (Capitulo c in capitulos)
             {
                 //Pendiente bucle recorra las secciones
-                foreach (Seccion s in c.Secciones)
+                foreach (Seccion s in c.secciones)
                 {
-                    palabrasPorSeccion.Add(ContarPalabrasSeccion(s.Texto));
+                    palabrasPorSeccion.Add(ContarPalabrasSeccion(s.texto));
 
                 }
             }
@@ -78,9 +78,9 @@ namespace NovelasAPP.UI.Graficos
             foreach (Capitulo c in capitulos)
             {
                 //Pendiente bucle recorra las secciones
-                foreach (Seccion s in c.Secciones)
+                foreach (Seccion s in c.secciones)
                 {
-                    carPorSeccion.Add(ContarCaracteresSeccion(s.Texto));
+                    carPorSeccion.Add(ContarCaracteresSeccion(s.texto));
 
                 }
             }
@@ -94,7 +94,7 @@ namespace NovelasAPP.UI.Graficos
 
             foreach(Seccion s in capitulo)
             {
-                palabrasTotales += ContarPalabrasSeccion(s.Texto);
+                palabrasTotales += ContarPalabrasSeccion(s.texto);
             }
 
             return palabrasTotales;
@@ -107,7 +107,7 @@ namespace NovelasAPP.UI.Graficos
 
             foreach (Seccion s in capitulo)
             {
-                caracteresTotales += ContarCaracteresSeccion(s.Texto);
+                caracteresTotales += ContarCaracteresSeccion(s.texto);
             }
 
             return caracteresTotales;

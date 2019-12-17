@@ -1,10 +1,10 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
 using System.Xml;
 using System.Collections;
+using System.Linq;
 using System.Xml.Linq;
 
 namespace NovelasAPP.Core.Capitulos
@@ -18,47 +18,57 @@ namespace NovelasAPP.Core.Capitulos
         public const string EtqNotas = "nota";
         public const string EtqTexto = "texto";
         public const string EtqTitulo = "titulo";
-
+        
         public RegistroCapitulos()
         {
-            Capitulos = new List<Capitulo>();
+            this.capitulos = new List<Capitulo>();
         }
 
         public RegistroCapitulos(IEnumerable<Capitulo> capitulos)
             : this()
         {
-            this.Capitulos.AddRange(capitulos);
+            this.capitulos.AddRange(capitulos);
         }
 
         public void Add(Capitulo c)
         {
-            Capitulos.Add(c);
+            this.capitulos.Add(c);
         }
 
 
         public bool Remove(Capitulo c)
         {
-            return Capitulos.Remove(c);
+            return this.capitulos.Remove(c);
         }
 
-        /// <summary>
-        /// Elimina un viaje en la pos. i.
-        /// </summary>
-        /// <param name="i">La pos. a eliminar</param>
+        public void AddSeccion(String titulo, String notas, String texto)
+        {
+            Capitulo c = this.GetCapitulo(titulo);
+            c.addSeccion(notas, texto);
+            //capitulos[capitulos.IndexOf(c)].addSeccion(notas,texto);
+            //this.Actualiza(c);
+        }
+        public void Actualiza(Capitulo c)
+        {
+            capitulos.RemoveAll(x => x.titulo == c.titulo);
+            capitulos.Add(c);
+        }
+
+
 		public void RemoveAt(int i)
         {
-            Capitulos.RemoveAt(i);
+            this.capitulos.RemoveAt(i);
         }
 
 
         public void AddRange(IEnumerable<Capitulo> rs)
         {
-            Capitulos.AddRange(rs);
+            this.capitulos.AddRange(rs);
         }
 
         public int Count
         {
-            get { return Capitulos.Count; }
+            get { return this.capitulos.Count; }
         }
 
         public bool IsReadOnly
@@ -69,23 +79,23 @@ namespace NovelasAPP.Core.Capitulos
 
         public void Clear()
         {
-            Capitulos.Clear();
+            this.capitulos.Clear();
         }
 
         public bool Contains(Capitulo c)
         {
-            return Capitulos.Contains(c);
+            return this.capitulos.Contains(c);
         }
 
 
         public void CopyTo(Capitulo[] c, int i)
         {
-            Capitulos.CopyTo(c, i);
+            this.capitulos.CopyTo(c, i);
         }
 
         IEnumerator<Capitulo> IEnumerable<Capitulo>.GetEnumerator()
         {
-            foreach (var c in Capitulos)
+            foreach (var c in this.capitulos)
             {
                 yield return c;
             }
@@ -93,7 +103,7 @@ namespace NovelasAPP.Core.Capitulos
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            foreach (var c in Capitulos)
+            foreach (var c in this.capitulos)
             {
                 yield return c;
             }
@@ -101,76 +111,69 @@ namespace NovelasAPP.Core.Capitulos
 
         public Capitulo GetCapitulo(string titulo)
         {
-            foreach (var capitulo in Capitulos)
+            foreach (var capitulo in capitulos)
             {
-                if (capitulo.Titulo == titulo) return capitulo;
+                if (capitulo.titulo == titulo) return capitulo;
             }
             return null;
         }
 
         public Capitulo this[int i]
         {
-            get { return Capitulos[i]; }
-            set { Capitulos[i] = value; }
+            get { return this.capitulos[i]; }
+            set { this.capitulos[i] = value; }
         }
 
         public override string ToString()
         {
             var toret = new StringBuilder();
 
-            foreach (Capitulo c in Capitulos)
+            foreach (Capitulo c in this.capitulos)
             {
-                toret.Append("Capitulo");
                 toret.AppendLine(c.ToString());
             }
 
             return toret.ToString();
         }
 
-        /// <summary>
-        /// Guarda la lista de viajes como xml.
-        /// </summary>
+
         public void GuardaXml()
         {
-            GuardaXml(ArchivoXml);
+            this.GuardaXml(ArchivoXml);
         }
 
-        /// <summary>
-        /// Guarda la lista de viajes como XML.
-        /// <param name="nf">El nombre del archivo.</param>
-        /// </summary>
+
         public void GuardaXml(string nf)
         {
             var doc = new XDocument();
             var root = new XElement(EtqCapitulos);
 
-            foreach (Capitulo capitulo in Capitulos)
+            foreach (Capitulo capitulo in this.capitulos)
             {
-                var secciones = capitulo.Secciones;
+                var secciones = capitulo.secciones;
+                XElement cap = new XElement(EtqCapitulo, 
+                    new XAttribute(EtqTitulo, capitulo.titulo),
+                    new XAttribute(EtqNotas, capitulo.notas)
+                );
+                
+                
                 foreach (var seccion in secciones)
                 {
-                    root.Add(new XElement(EtqCapitulo,
-                                            new XAttribute(EtqTitulo, capitulo.Titulo),
-                                            new XAttribute(EtqNotas, capitulo.Notas),
-                                            new XElement(EtqSeccion,
-                                                new XAttribute(EtqNotas, seccion.Notas),
-                                                new XAttribute(EtqTexto, seccion.Texto)
-                                            )
-                                          )
-                    );
+                    cap.Add(new XElement(EtqSeccion,
+                        new XAttribute(EtqNotas, seccion.notas),
+                        new XAttribute(EtqTexto, seccion.texto)
+                    ));
+
                 }
+                
+                root.Add(cap);
             }
 
             doc.Add(root);
             doc.Save(nf);
         }
 
-        /// <summary>
-        /// Recupera los viajes desde un archivo XML.
-        /// </summary>
-        /// <returns>Un <see cref="RegistroViajes"/> con los
-        /// <see cref="Viaje"/>'s.</returns>
-        /// <param name="f">El nombre del archivo.</param>
+
 		public static RegistroCapitulos RecuperaXml(string f)
         {
             var toret = new RegistroCapitulos();
@@ -186,14 +189,14 @@ namespace NovelasAPP.Core.Capitulos
 
                     foreach (XElement capituloXml in capitulos)
                     {
-                        Capitulo c = new Capitulo((string)capituloXml.Attribute(EtqTitulo), (string)capituloXml.Attribute(EtqNotas));
+                        Capitulo c = new Capitulo((string) capituloXml.Attribute(EtqTitulo), (string) capituloXml.Attribute(EtqNotas));
 
                         var seccionesXML = capituloXml.Elements();
                         foreach (var seccion in seccionesXML)
                         {
-                            c.AddSeccion(
-                                (string)seccion.Attribute(EtqNotas),
-                                (string)seccion.Attribute(EtqTexto)
+                            c.addSeccion(
+                                (string) seccion.Attribute(EtqNotas),
+                                (string) seccion.Attribute(EtqTexto)
                             );
                         }
                         toret.Add(c);
@@ -212,14 +215,8 @@ namespace NovelasAPP.Core.Capitulos
             return toret;
         }
 
-        public List<Capitulo> Capitulos { get; set; }
-
-        /// <summary>
-        /// Crea un registro de viajes con la lista de viajes recuperada
-        /// del archivo por defecto.
-        /// </summary>
-        /// <returns>Un <see cref="RegistroViajes"/>.</returns>
-		public static RegistroCapitulos RecuperaXml()
+        public List<Capitulo> capitulos { get; set; }
+        public static RegistroCapitulos RecuperaXml()
         {
             return RecuperaXml(ArchivoXml);
         }

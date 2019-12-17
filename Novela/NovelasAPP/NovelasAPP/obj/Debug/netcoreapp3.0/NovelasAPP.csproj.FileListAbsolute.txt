@@ -20,3 +20,14 @@ D:\spire\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netc
 D:\spire\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.runtimeconfig.dev.json
 D:\spire\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.dll
 D:\spire\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.pdb
+C:\Users\fufer\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.exe
+C:\Users\fufer\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.deps.json
+C:\Users\fufer\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.runtimeconfig.json
+C:\Users\fufer\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.runtimeconfig.dev.json
+C:\Users\fufer\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.dll
+C:\Users\fufer\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.pdb
+C:\Users\fufer\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.csprojAssemblyReference.cache
+C:\Users\fufer\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.AssemblyInfoInputs.cache
+C:\Users\fufer\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.AssemblyInfo.cs
+C:\Users\fufer\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.dll
+C:\Users\fufer\Documents\GitHub\NovelasApp\Novela\NovelasAPP\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.pdb
