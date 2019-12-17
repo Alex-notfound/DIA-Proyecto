@@ -15,19 +15,20 @@ namespace NovelasAPP.UI.Views
         {
             var mainPanel = new WFrms.TableLayoutPanel
             {
+                RowCount = 3,
                 Dock = WFrms.DockStyle.Fill
             };
             
-            mainPanel.Controls.Add(this.BuildTitulo());
-            mainPanel.Controls.Add(this.BuildNotas());
-            mainPanel.Controls.Add(this.BuildBtnAddCap());
+            mainPanel.Controls.Add(this.BuildTitulo(), 0, 0);
+            mainPanel.Controls.Add(this.BuildNotas(), 0, 1);
+            mainPanel.Controls.Add(this.BuildBtnAddCap(), 0, 2);
             
             this.Controls.Add(mainPanel);
         }
         
         WFrms.Panel BuildTitulo()
         {
-            var pnl = new WFrms.Panel {Dock = WFrms.DockStyle.Top};
+            var pnl = new WFrms.Panel { AutoSize = true, Dock = WFrms.DockStyle.Top};
             this.txtTitulo = new WFrms.TextBox()
             {
                 PlaceholderText = "Titulo",
@@ -40,7 +41,7 @@ namespace NovelasAPP.UI.Views
         
         WFrms.Panel BuildNotas()
         {
-            var pnl = new WFrms.Panel {Dock = WFrms.DockStyle.Top};
+            var pnl = new WFrms.Panel { AutoSize = true, Dock = WFrms.DockStyle.Top};
 
             this.txtNotas = new WFrms.TextBox()
             {
@@ -56,11 +57,12 @@ namespace NovelasAPP.UI.Views
         {
             var pnl = new WFrms.Panel
             {
+                AutoSize = true,
                 Dock = WFrms.DockStyle.Top
             };
             this.btnAddCap = new WFrms.Button
             {
-                Dock = WFrms.DockStyle.Fill,
+                AutoSize = true,
                 Text = "Editar"
             };
             

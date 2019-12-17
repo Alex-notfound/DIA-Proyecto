@@ -120,7 +120,8 @@ namespace NovelasAPP.Core.HTML
             using (Process process = new Process())
             {
                 process.StartInfo.UseShellExecute = true;
-                process.StartInfo.FileName = "chrome";
+                //process.StartInfo.FileName = "chrome";
+                process.StartInfo.FileName = "firefox";
                 process.StartInfo.Arguments = @"libroHTML.html";
                 process.Start();
             }

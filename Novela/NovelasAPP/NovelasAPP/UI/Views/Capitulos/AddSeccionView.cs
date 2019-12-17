@@ -15,12 +15,13 @@ namespace NovelasAPP.UI.Views
         {
             var mainPanel = new WFrms.TableLayoutPanel
             {
+                RowCount = 3,
                 Dock = WFrms.DockStyle.Fill
             };
             
-            mainPanel.Controls.Add(this.BuildNotas());
-            mainPanel.Controls.Add(this.BuildTexto());
-            mainPanel.Controls.Add(this.BuildBtnAddSec());
+            mainPanel.Controls.Add(this.BuildNotas(), 0, 0);
+            mainPanel.Controls.Add(this.BuildTexto(), 0, 1);
+            mainPanel.Controls.Add(this.BuildBtnAddSec(), 0, 2);
             
             
             this.Controls.Add(mainPanel);
@@ -28,7 +29,7 @@ namespace NovelasAPP.UI.Views
 
         WFrms.Panel BuildNotas()
         {
-            var pnl = new WFrms.Panel {Dock = WFrms.DockStyle.Top};
+            var pnl = new WFrms.Panel {AutoSize = true, Dock = WFrms.DockStyle.Top};
 
             this.txtNotas = new WFrms.TextBox()
             {
@@ -40,7 +41,7 @@ namespace NovelasAPP.UI.Views
         
         WFrms.Panel BuildTexto()
         {
-            var pnl = new WFrms.Panel {Dock = WFrms.DockStyle.Top};
+            var pnl = new WFrms.Panel { AutoSize = true, Dock = WFrms.DockStyle.Top};
 
             this.txtTitulo = new WFrms.TextBox()
             {
@@ -54,11 +55,12 @@ namespace NovelasAPP.UI.Views
         {
             var pnl = new WFrms.Panel
             {
+                AutoSize = true,
                 Dock = WFrms.DockStyle.Top
             };
             this.btnAddSec = new WFrms.Button
             {
-                Dock = WFrms.DockStyle.Fill,
+                AutoSize = true,
                 Text = "Añadir"
             };
             

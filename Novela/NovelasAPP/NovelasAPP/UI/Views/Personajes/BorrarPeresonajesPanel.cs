@@ -76,9 +76,15 @@ namespace NovelasAPP.UI.Views
 
             try
             {
-                btBorrar.Click += (sender, args) => borrarUnicoPersonaje(listaPersonajes.SelectedItem.ToString());
-                
-            }catch(NullReferenceException e)
+                btBorrar.Click += (sender, args) => {
+                    if (listaPersonajes.SelectedItem != null)
+                    {
+                        borrarUnicoPersonaje(listaPersonajes.SelectedItem.ToString());
+                    }
+                };
+
+            }
+            catch(NullReferenceException e)
             {
                 this.Close();
             }

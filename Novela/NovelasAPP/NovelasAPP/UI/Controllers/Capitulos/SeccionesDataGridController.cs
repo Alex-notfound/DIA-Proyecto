@@ -53,7 +53,7 @@ namespace NovelasAPP.UI.Controllers
         {
             var seccion = this.View.dataGrid.Rows[row].Cells[0].Value.ToString(); 
             //new EditSeccionController(rc, c, seccion);
-            EdicionView editView = new EdicionController(rc, new RegistroPersonajes().RecuperaXml(), c, new Seccion("", seccion), "Seccion " + (row+1)).edicionView;
+            EdicionView editView = new EdicionController(rc, new RegistroPersonajes().RecuperaXml(), c, c.recuperarSeccion(seccion), "Seccion " + (row+1)).edicionView;
             editView.Show();
             editView.FormClosed += (sender, args) => this.Actualiza(c); 
             /*this.Actualiza(c);*/
