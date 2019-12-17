@@ -89,10 +89,10 @@ namespace NovelasAPP.UI.Controllers
 
         void addSeccion(RegistroCapitulos registroCapitulos, RegistroPersonajes registroPersonajes, Capitulo capActual)
         {
-            //edicionView.Hide();
+            edicionView.Hide();
             EdicionView ed = new EdicionController(registroCapitulos, registroPersonajes, capActual, new Seccion("",""), "Nueva Seccion").edicionView;
 
-            //ed.ShowDialog();
+            ed.ShowDialog();
 
             ed.FormClosed += (sender, args) => 
             {
