@@ -22,15 +22,23 @@ namespace PersonajesNovelas
         {
             var mainPanel = new WFrms.TableLayoutPanel
             {
+                ColumnCount = 2,
+                RowCount = 2,
+                AutoSize = true,
                 Dock = WFrms.DockStyle.Fill
             };
-            mainPanel.Controls.Add(this.BuildCreate());
-            mainPanel.Controls.Add(this.BuildDelete());
+            mainPanel.Controls.Add(this.BuildCreate(), 0, 0);
+            mainPanel.Controls.Add(this.BuildDelete(), 1, 0);
+
 
             Datos = new DataGridView();
             
             Datos.Size = new Size(390, 200);
-            mainPanel.Controls.Add(Datos);
+            mainPanel.Controls.Add(Datos, 0, 1);
+            mainPanel.SetColumnSpan(Datos, 2);
+
+            mainPanel.AutoSize = true;
+
             TablaMultifuncion_Load();
             
             
@@ -60,7 +68,7 @@ namespace PersonajesNovelas
             BtBorrarPersonajes = new Button
             {
                 Text = "Borrar personajes",
-                Dock = DockStyle.Top
+                Dock = DockStyle.Left
             };
 
             return BtBorrarPersonajes;

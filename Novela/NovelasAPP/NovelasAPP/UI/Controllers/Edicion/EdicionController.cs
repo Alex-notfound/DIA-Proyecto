@@ -13,7 +13,6 @@ namespace NovelasAPP.UI.Controllers
 
         public EdicionController(RegistroCapitulos registroCapitulos, RegistroPersonajes registroPersonajes, Capitulo capActual, Seccion seccionActual, string titulo)
         {
-
             capitulos = registroCapitulos.capitulos;
             personajes = registroPersonajes.Personajes;
 
@@ -64,7 +63,7 @@ namespace NovelasAPP.UI.Controllers
             edicionView.lvCapitulos.ItemActivate += (sender, args) => showNotas(edicionView.lvCapitulos, edicionView.lvCapitulos.SelectedItems[0].Text, capitulos);
             edicionView.lvSecciones.ItemActivate += (sender, args) => showNotas(edicionView.lvSecciones, edicionView.lvSecciones.SelectedItems[0].Text, capActual.secciones);
             edicionView.lvPersonajes.ItemActivate += (sender, args) => showNotas(edicionView.lvPersonajes, edicionView.lvPersonajes.SelectedItems[0].Text, personajes);
-
+            edicionView.Show();
         }
 
         Capitulo AddCapitulo()
@@ -92,7 +91,7 @@ namespace NovelasAPP.UI.Controllers
             edicionView.Hide();
             EdicionView ed = new EdicionController(registroCapitulos, registroPersonajes, capActual, new Seccion("",""), "Nueva Seccion").edicionView;
 
-            ed.Show();
+            ed.ShowDialog();
 
             ed.FormClosed += (sender, args) => 
             {
@@ -108,8 +107,6 @@ namespace NovelasAPP.UI.Controllers
 
         private void save(RegistroCapitulos rc,Capitulo cap, Seccion seccionActual)
         {
-            
-            seccionActual.texto = edicionView.tbEdicion.Text;
             //MessageBox.Show(this.edicionView.tbEdicion.Text);
             rc.capitulos[rc.capitulos.IndexOf(cap)].editarSeccion(seccionActual.texto, this.edicionView.tbEdicion.Text,
                 "");
