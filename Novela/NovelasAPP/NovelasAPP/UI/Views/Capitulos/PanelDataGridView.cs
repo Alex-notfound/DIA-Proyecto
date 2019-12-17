@@ -16,27 +16,36 @@ namespace NovelasAPP.UI.Views
         {
             var mainPanel = new WFrms.TableLayoutPanel
             {
-                Dock = WFrms.DockStyle.Fill
+                Dock = WFrms.DockStyle.Fill,
+                ColumnCount = 4,
+                RowCount = 2
             };
+
+            WFrms.Panel gridPanel = this.BuildDataGrid(caps);
+
+            mainPanel.Controls.Add(gridPanel, 0, 1);
+            mainPanel.Controls.Add(this.BuildAddBtn(), 0, 0);
+            mainPanel.Controls.Add(this.BuildEditBtn(), 1, 0);
+            mainPanel.Controls.Add(this.BuildSeccionBtn(), 2, 0);
+            mainPanel.Controls.Add(this.BuildListBtn(), 3, 0);
             
-            mainPanel.Controls.Add(this.BuildDataGrid(caps));
-            mainPanel.Controls.Add(this.BuildAddBtn());
-            mainPanel.Controls.Add(this.BuildEditBtn());
-            mainPanel.Controls.Add(this.BuildSeccionBtn());
-            mainPanel.Controls.Add(this.BuildListBtn());
-            
+            mainPanel.SetColumnSpan(gridPanel, 4);
+
             this.Controls.Add(mainPanel);
+            this.MinimumSize = new Size(600, 200);
+            this.Text = "Capitulos";
         }
 
         WFrms.Panel BuildEditBtn()
         {
             var pnl = new WFrms.Panel
             {
+                AutoSize = true,
                 Dock = WFrms.DockStyle.Top
             };
             this.editBtn = new WFrms.Button
             {
-                Dock = WFrms.DockStyle.Fill,
+                AutoSize = true,
                 Text = "Editar"
             };
 
@@ -48,11 +57,12 @@ namespace NovelasAPP.UI.Views
         {
             var pnl = new WFrms.Panel
             {
+                AutoSize = true,
                 Dock = WFrms.DockStyle.Top
             };
             this.addBtn = new WFrms.Button
             {
-                Dock = WFrms.DockStyle.Fill,
+                AutoSize = true,
                 Text = "Añadir"
             };
 
@@ -64,12 +74,13 @@ namespace NovelasAPP.UI.Views
         {
             var pnl = new WFrms.Panel
             {
+                AutoSize = true,
                 Dock = WFrms.DockStyle.Top
             };
             
             this.listBtn = new WFrms.Button
             {
-                Dock = WFrms.DockStyle.Fill,
+                AutoSize = true,
                 Text = "Listar"
             };
 
@@ -81,12 +92,13 @@ namespace NovelasAPP.UI.Views
         {
             var pnl = new WFrms.Panel
             {
+                AutoSize = true,
                 Dock = WFrms.DockStyle.Top
             };
             
             this.seccionBtn = new WFrms.Button
             {
-                Dock = WFrms.DockStyle.Fill,
+                AutoSize = true,
                 Text = "Añadir seccion"
             };
 

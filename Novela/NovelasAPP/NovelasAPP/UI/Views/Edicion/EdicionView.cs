@@ -14,7 +14,7 @@ namespace NovelasAPP.UI.Views
 {
     public partial class EdicionView : Form
     {
-        public EdicionView(Capitulo capituloActual)
+        public EdicionView(Capitulo capituloActual, String titulo)
         {
             this.mainPanel = new TableLayoutPanel
             {
@@ -27,15 +27,24 @@ namespace NovelasAPP.UI.Views
             TableLayoutPanel topPanel = this.topPanel();
             TableLayoutPanel escrituraTable = this.tlpEscritura();
 
-            CapitulosPanel(EdicionController.capitulos);
-            //PersonajesPanel(EdicionController.personajes);
+
+            if (EdicionController.capitulos != null)
+            {
+                CapitulosPanel(EdicionController.capitulos);
+                mainPanel.Controls.Add(lvCapitulos, 1, 1);
+            }
+
+            if (EdicionController.personajes != null)
+            {
+                PersonajesPanel(EdicionController.personajes);
+                mainPanel.Controls.Add(lvPersonajes, 1, 3);
+            }
+
             SeccionesPanel(capituloActual.secciones);
 
             mainPanel.Controls.Add(topPanel, 0, 0);
             mainPanel.Controls.Add(escrituraTable, 0, 1);
-            mainPanel.Controls.Add(lvCapitulos, 1, 1);
             mainPanel.Controls.Add(lvSecciones, 1, 2);
-            //mainPanel.Controls.Add(lvPersonajes, 1, 3);
 
             mainPanel.SetColumnSpan(topPanel, 2);
             mainPanel.SetRowSpan(escrituraTable, mainPanel.RowCount - 1);
@@ -47,7 +56,7 @@ namespace NovelasAPP.UI.Views
 
             this.Controls.Add(mainPanel);
             this.MinimumSize = new Size(1024, 768);
-            this.Text = "Escritura";
+            this.Text = titulo;
         }
 
         void CapitulosPanel(List<Capitulo> capitulos)

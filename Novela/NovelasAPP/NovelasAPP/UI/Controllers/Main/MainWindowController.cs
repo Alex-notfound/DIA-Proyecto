@@ -17,26 +17,28 @@ namespace NovelasAPP.UI.Controllers
             MainView = new MainWindowView();
             MainView.BtnPersonajes.Click += (sender, args) =>
             {
-                this.BuildPersonajes(new PersonajesController());
+                this.BuildPersonajes();
                 MainView.Hide();
             };
             MainView.BtnCapitulos.Click += (sender, args) =>
             {
-                this.BuildCapitulos(new PanelDataGridController());
+                this.BuildCapitulos();
                 MainView.Hide();
             };
         }
 
-        void BuildCapitulos(PanelDataGridController pdg)
+        void BuildCapitulos()
         {
-            PanelDataGridView view = pdg.View;
+            capController = new PanelDataGridController();
+            PanelDataGridView view = capController.View;
             view.Show();
             view.FormClosed += (sender, args) => MainView.Show();
         }
 
-        void BuildPersonajes(PersonajesController pj)
+        void BuildPersonajes()
         {
-            PersonajesView view = pj.View;
+            pejController = new PersonajesController();
+            PersonajesView view = pejController.View;
             view.Show();
             view.FormClosed += (sender, args) => MainView.Show();
         }
@@ -44,6 +46,16 @@ namespace NovelasAPP.UI.Controllers
         public MainWindowView MainView
         {
             get; set;
+        }
+
+        public PersonajesController pejController
+        {
+            get; private set;
+        }
+
+        public PanelDataGridController capController
+        {
+            get; private set;
         }
     }
 

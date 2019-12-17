@@ -11,13 +11,13 @@ namespace NovelasAPP.UI.Controllers
     class EdicionController
     {
 
-        public EdicionController(List<Capitulo> listaCapitulos, List<Personaje> listaPersonajes, Capitulo capActual, Seccion seccionActual)
+        public EdicionController(RegistroCapitulos registroCapitulos, RegistroPersonajes registroPersonajes, Capitulo capActual, Seccion seccionActual, string titulo)
         {
 
-            capitulos = listaCapitulos;
-            personajes = listaPersonajes;
+            capitulos = registroCapitulos.capitulos;
+            personajes = registroPersonajes.Personajes;
 
-            edicionView = new EdicionView(capActual);
+            edicionView = new EdicionView(capActual, titulo);
 
 
             edicionView.tbEdicion.Text = seccionActual.texto;
@@ -46,10 +46,10 @@ namespace NovelasAPP.UI.Controllers
                     {
                         case DialogResult.Yes:
                             this.save(seccionActual);
-                            addSeccion(capActual);
+                            addSeccion(registroCapitulos, registroPersonajes, capActual);
                             break;
                         case DialogResult.No:
-                            addSeccion(capActual);
+                            addSeccion(registroCapitulos, registroPersonajes, capActual);
                             break;
                         case DialogResult.Cancel:
                             break;
@@ -57,7 +57,7 @@ namespace NovelasAPP.UI.Controllers
                 }
                 else
                 {
-                    addSeccion(capActual);
+                    addSeccion(registroCapitulos, registroPersonajes, capActual);
                 };
             };
 
@@ -87,10 +87,10 @@ namespace NovelasAPP.UI.Controllers
             return new Capitulo(titulo, "");
         }
 
-        void addSeccion(Capitulo capActual)
+        void addSeccion(RegistroCapitulos registroCapitulos, RegistroPersonajes registroPersonajes, Capitulo capActual)
         {
             edicionView.Hide();
-            EdicionView ed = new EdicionController(capitulos, personajes, capActual, new Seccion("","")).edicionView;
+            EdicionView ed = new EdicionController(registroCapitulos, registroPersonajes, capActual, new Seccion("",""), "Nueva Seccion").edicionView;
 
             ed.Show();
 

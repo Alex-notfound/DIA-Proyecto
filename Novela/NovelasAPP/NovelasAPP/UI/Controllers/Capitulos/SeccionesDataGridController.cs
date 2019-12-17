@@ -5,6 +5,7 @@ using WFrms = System.Windows.Forms;
 namespace NovelasAPP.UI.Controllers
 {
     using NovelasAPP.Core.Capitulos;
+    using NovelasAPP.Core.Personajes;
     using NovelasAPP.UI.Views;
     using System;
     
@@ -52,7 +53,7 @@ namespace NovelasAPP.UI.Controllers
         {
             var seccion = this.View.dataGrid.Rows[row].Cells[0].Value.ToString(); 
             //new EditSeccionController(rc, c, seccion);
-            new EdicionController(rc.capitulos, null, c, new Seccion("", seccion)).edicionView.Show();
+            new EdicionController(rc, new RegistroPersonajes().RecuperaXml(), c, new Seccion("", seccion), "Seccion " + (row+1)).edicionView.Show();
             this.Actualiza(c);
         }
         
