@@ -30,6 +30,9 @@ namespace NovelasAPP.UI.Controllers
 
             this.View.dataGrid.CellDoubleClick += (sender, e) =>
                 AbrirSecciones(e.RowIndex);
+
+            this.View.dataGrid.UserDeletedRow += (sender, e) =>
+                DeleteCapitulo(e.Row.Cells[0].Value.ToString());
             
             this.View.FormClosing += (sender, e) => this.Guardar();
 
@@ -78,6 +81,12 @@ namespace NovelasAPP.UI.Controllers
             }
 
             this.rc = rc;
+        }
+
+        public void DeleteCapitulo(string cap)
+        {
+            rc.capitulos.Remove(rc.GetCapitulo(cap));
+            this.Actualiza(rc);
         }
 
         public void AbrirSecciones(int row)
