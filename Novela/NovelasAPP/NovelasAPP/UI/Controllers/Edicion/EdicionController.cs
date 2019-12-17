@@ -22,7 +22,7 @@ namespace NovelasAPP.UI.Controllers
 
             edicionView.tbEdicion.Text = seccionActual.texto;
 
-            edicionView.btnGuardar.Click += (sender, args) => save(seccionActual );
+            edicionView.btnGuardar.Click += (sender, args) => save(registroCapitulos, capActual, seccionActual );
 
             edicionView.btnCursiva.Click += (sender, args) => cursiveText(edicionView.tbEdicion.SelectionStart, edicionView.tbEdicion.SelectionLength);
             edicionView.btnNegrita.Click += (sender, args) => boldText(edicionView.tbEdicion.SelectionStart, edicionView.tbEdicion.SelectionLength);
@@ -45,7 +45,7 @@ namespace NovelasAPP.UI.Controllers
                     switch (result)
                     {
                         case DialogResult.Yes:
-                            this.save(seccionActual);
+                            this.save(registroCapitulos,capActual,seccionActual);
                             addSeccion(registroCapitulos, registroPersonajes, capActual);
                             break;
                         case DialogResult.No:
@@ -106,10 +106,15 @@ namespace NovelasAPP.UI.Controllers
 
         }
 
-        private void save(Seccion seccionActual)
+        private void save(RegistroCapitulos rc,Capitulo cap, Seccion seccionActual)
         {
+            
             seccionActual.texto = edicionView.tbEdicion.Text;
+            //MessageBox.Show(this.edicionView.tbEdicion.Text);
+            rc.capitulos[rc.capitulos.IndexOf(cap)].editarSeccion(seccionActual.texto, this.edicionView.tbEdicion.Text,
+                this.edicionView.tbEdicion.Text);
             MessageBox.Show("Guardado correctamente","Guardado", MessageBoxButtons.OK);
+            seccionActual.texto = edicionView.tbEdicion.Text;
         }
 
         //private void showNotas(ListView listView, string text, List<Capitulo> listaCapitulos)

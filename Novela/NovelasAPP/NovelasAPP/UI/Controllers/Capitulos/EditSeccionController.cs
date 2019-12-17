@@ -17,6 +17,7 @@ namespace NovelasAPP.UI.Controllers
             this.View.btnEditSec.Click += (sender, args) =>
             {
                 DialogResult result = MessageBox.Show("¿Desea guardar los cambios?", "Advertencia", MessageBoxButtons.YesNoCancel);
+                EditSeccion(rc, cap, seccion);
                 //new EdicionController(rc.capitulos, null,cap, new Seccion("", seccion)).edicionView.Show();
             };
             this.View.ShowDialog();
@@ -32,6 +33,7 @@ namespace NovelasAPP.UI.Controllers
             
             rc.capitulos[rc.capitulos.IndexOf(capitulo)].editarSeccion(seccion, this.View.txtTitulo.Text,
                 this.View.txtNotas.Text);
+            
             this.View.Close();
         }
         

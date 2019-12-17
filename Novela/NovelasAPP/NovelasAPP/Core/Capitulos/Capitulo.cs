@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using System.Windows.Forms;
 
 namespace NovelasAPP.Core.Capitulos
 {
