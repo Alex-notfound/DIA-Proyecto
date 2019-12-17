@@ -13,7 +13,6 @@ namespace NovelasAPP.UI.Controllers
 
         public EdicionController(RegistroCapitulos registroCapitulos, RegistroPersonajes registroPersonajes, Capitulo capActual, Seccion seccionActual, string titulo)
         {
-
             capitulos = registroCapitulos.capitulos;
             personajes = registroPersonajes.Personajes;
 
@@ -64,7 +63,7 @@ namespace NovelasAPP.UI.Controllers
             //edicionView.lvCapitulos.ItemActivate += (sender, args) => showNotas(edicionView.lvCapitulos, edicionView.lvCapitulos.SelectedItems[0].Text, capitulos);
             //edicionView.lvSecciones.ItemActivate += (sender, args) => showNotas(edicionView.lvSecciones, edicionView.lvSecciones.SelectedItems[0].Text, capActual.secciones);
             //edicionView.lvPersonajes.ItemActivate += (sender, args) => showNotas(edicionView.lvPersonajes, edicionView.lvPersonajes.SelectedItems[0].Text, personajes);
-            edicionView.ShowDialog();
+            edicionView.Show();
         }
 
         Capitulo AddCapitulo()
