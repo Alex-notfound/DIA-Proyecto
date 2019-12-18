@@ -19,8 +19,8 @@ namespace NovelasAPP.UI.Views
                 Dock = WFrms.DockStyle.Fill
             };
             
-            mainPanel.Controls.Add(this.BuildNotas(), 0, 0);
-            mainPanel.Controls.Add(this.BuildTexto(), 0, 1);
+            mainPanel.Controls.Add(this.BuildTexto(), 0, 0);
+            mainPanel.Controls.Add(this.BuildNotas(), 0, 1);
             mainPanel.Controls.Add(this.BuildBtnAddSec(), 0, 2);
             
             
@@ -33,8 +33,7 @@ namespace NovelasAPP.UI.Views
 
             this.txtNotas = new WFrms.TextBox()
             {
-                PlaceholderText = "Notas",
-                Dock = WFrms.DockStyle.Fill
+                PlaceholderText = "Notas"
             };
             pnl.Controls.Add(this.txtNotas);
             return pnl;
@@ -46,8 +45,7 @@ namespace NovelasAPP.UI.Views
 
             this.txtTitulo = new WFrms.TextBox()
             {
-                PlaceholderText = "Texto",
-                Dock = WFrms.DockStyle.Fill
+                PlaceholderText = "Texto"
             };
             pnl.Controls.Add(this.txtTitulo);
             return pnl;

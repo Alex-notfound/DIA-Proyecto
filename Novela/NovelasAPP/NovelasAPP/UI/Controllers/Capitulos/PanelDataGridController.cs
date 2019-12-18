@@ -23,8 +23,8 @@ namespace NovelasAPP.UI.Controllers
             this.View.addBtn.Click += (sender, e) =>
                 AddCapitulo(rc);
 
-            //this.View.listBtn.Click += (sender, e) =>
-            //    ListarCapitulos();
+            //this.View.borrarBtn.Click += (sender, e) =>
+            //    DeleteCapitulo(this.View.dataGrid.SelectedRows[0].Cells[0].Value.ToString());
 
             this.View.listBtn.Click += (sender, e) =>
                 new GraficosController(rc.capitulos).View.Show(); ;
@@ -37,7 +37,7 @@ namespace NovelasAPP.UI.Controllers
 
             this.View.dataGrid.UserDeletedRow += (sender, e) =>
                 DeleteCapitulo(e.Row.Cells[0].Value.ToString());
-            
+
             this.View.FormClosing += (sender, e) => this.Guardar();
 
         }

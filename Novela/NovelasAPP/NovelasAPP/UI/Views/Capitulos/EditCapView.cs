@@ -32,8 +32,7 @@ namespace NovelasAPP.UI.Views
             this.txtTitulo = new WFrms.TextBox()
             {
                 PlaceholderText = "Titulo",
-                Text = c.titulo,
-                Dock = WFrms.DockStyle.Fill
+                Text = c.titulo
             };
             pnl.Controls.Add(this.txtTitulo);
             return pnl;
@@ -46,8 +45,7 @@ namespace NovelasAPP.UI.Views
             this.txtNotas = new WFrms.TextBox()
             {
                 PlaceholderText = "Notas",
-                Text = c.notas,
-                Dock = WFrms.DockStyle.Fill
+                Text = c.notas
             };
             pnl.Controls.Add(this.txtNotas);
             return pnl;

@@ -17,7 +17,7 @@ namespace NovelasAPP.UI.Views
             var mainPanel = new WFrms.TableLayoutPanel
             {
                 Dock = WFrms.DockStyle.Fill,
-                ColumnCount = 4,
+                ColumnCount = 5,
                 RowCount = 2
             };
 
@@ -26,10 +26,11 @@ namespace NovelasAPP.UI.Views
             mainPanel.Controls.Add(gridPanel, 0, 1);
             mainPanel.Controls.Add(this.BuildAddBtn(), 0, 0);
             mainPanel.Controls.Add(this.BuildEditBtn(), 1, 0);
-            mainPanel.Controls.Add(this.BuildSeccionBtn(), 2, 0);
-            mainPanel.Controls.Add(this.BuildListBtn(), 3, 0);
+            //mainPanel.Controls.Add(this.BuildDeleteBtn(), 2, 0);
+            mainPanel.Controls.Add(this.BuildSeccionBtn(), 3, 0);
+            mainPanel.Controls.Add(this.BuildListBtn(), 4, 0);
             
-            mainPanel.SetColumnSpan(gridPanel, 4);
+            mainPanel.SetColumnSpan(gridPanel, 5);
 
             this.Controls.Add(mainPanel);
             this.MinimumSize = new Size(600, 200);
@@ -69,7 +70,24 @@ namespace NovelasAPP.UI.Views
             pnl.Controls.Add(this.addBtn);
             return pnl;
         }
-        
+
+        WFrms.Panel BuildDeleteBtn()
+        {
+            var pnl = new WFrms.Panel
+            {
+                AutoSize = true,
+                Dock = WFrms.DockStyle.Top
+            };
+            this.borrarBtn = new WFrms.Button
+            {
+                AutoSize = true,
+                Text = "Borrar"
+            };
+
+            pnl.Controls.Add(this.borrarBtn);
+            return pnl;
+        }
+
         WFrms.Panel BuildListBtn()
         {
             var pnl = new WFrms.Panel
@@ -154,6 +172,8 @@ namespace NovelasAPP.UI.Views
         public WFrms.Button listBtn { get; private set; }
         
         public WFrms.Button seccionBtn { get; private set; }
+
+        public WFrms.Button borrarBtn { get; private set; }
 
         public WFrms.DataGridView dataGrid { get; private set; }
 
