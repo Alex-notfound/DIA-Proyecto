@@ -1,0 +1,14 @@
+Proyecto: 	Aplicación de escritura de novelas
+
+Descripción: 	La funcion principal de la aplicacion es escribir una novela, permirtiendo la gestion de personajes, capitulos y secciones, además 
+		también cuenta con otras funciones como un sistema que permite generar gráficas de palabras/secciones escritas o convertir la novela a
+		formato HTML.
+
+Miembros del grupo:
+		Currás Rodríguez, Alexandre
+		Duque Puga, Daniel
+		Fernández Martínez, Iago
+		Rodríguez Álvarez, Fernando
+		Vila Fernández, David
+
+Github:		https://github.com/Alex-notfound/NovelasApp

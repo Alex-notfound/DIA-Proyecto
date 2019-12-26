@@ -20,13 +20,31 @@
     <Compile Update="UI\Views\Capitulos\EditCapView.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="UI\Views\Capitulos\EditSeccionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UI\Views\Capitulos\PanelDataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Capitulos\SeccionesDataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Edicion\EdicionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Edicion\ListaNotasView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Edicion\NuevoCapituloView.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\Views\Graficos\GraficoWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\Views\Graficos\GraficosView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Views\Graficos\PalabrasWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="UI\Views\Main\MainWindowView.cs">
