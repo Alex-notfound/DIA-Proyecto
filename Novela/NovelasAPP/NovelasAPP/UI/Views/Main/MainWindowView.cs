@@ -45,6 +45,7 @@ namespace NovelasAPP.UI
             mainPanel.Controls.Add(this.BtnHTML, 0, 2);
 
             this.Controls.Add(mainPanel);
+            this.Text = "NOVELAS APP";
         }
 
         public Button BtnCapitulos
