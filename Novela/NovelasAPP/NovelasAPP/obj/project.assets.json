@@ -8,20 +8,27 @@
     ".NETCoreApp,Version=v3.0": []
   },
   "packageFolders": {
-    "C:\\Users\\fufer\\.nuget\\packages\\": {}
+    "C:\\Users\\spire\\.nuget\\packages\\": {},
+    "E:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fufer\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
+      "projectUniqueName": "D:\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
       "projectName": "NovelasAPP",
-      "projectPath": "C:\\Users\\fufer\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
-      "packagesPath": "C:\\Users\\fufer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fufer\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\obj\\",
+      "projectPath": "D:\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\NovelasAPP.csproj",
+      "packagesPath": "C:\\Users\\spire\\.nuget\\packages\\",
+      "outputPath": "D:\\spire\\Documents\\GitHub\\NovelasApp\\Novela\\NovelasAPP\\NovelasAPP\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\fufer\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\spire\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.0"
@@ -52,7 +59,16 @@
           "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WindowsForms": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
