@@ -1,4 +1,5 @@
-﻿using NovelasAPP.Core.Capitulos;
+﻿using Microsoft.Win32;
+using NovelasAPP.Core.Capitulos;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -99,7 +100,6 @@ namespace NovelasAPP.Core.HTML
 
         public static void ParseLibro(List<Capitulo> capitulos)
         {
-            Console.WriteLine("GO");
             var html = "<html>\r\n<head>\r\n</head>\r\n<body>";
 
             foreach (Capitulo cap in capitulos)
@@ -120,13 +120,11 @@ namespace NovelasAPP.Core.HTML
             using (Process process = new Process())
             {
                 process.StartInfo.UseShellExecute = true;
-                //process.StartInfo.FileName = "chrome";
-                process.StartInfo.FileName = "firefox";
-                process.StartInfo.Arguments = @"libroHTML.html";
+                process.StartInfo.FileName = @"libroHTML.html";
                 process.Start();
             }
 
-            //Console.WriteLine(html);
         }
+
     }
 }
