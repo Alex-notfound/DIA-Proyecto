@@ -1,0 +1,10 @@
+D:\spire\Documents\GitHub\NovelasApp\Entrega\Proyecto\src\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.exe
+D:\spire\Documents\GitHub\NovelasApp\Entrega\Proyecto\src\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.deps.json
+D:\spire\Documents\GitHub\NovelasApp\Entrega\Proyecto\src\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.runtimeconfig.json
+D:\spire\Documents\GitHub\NovelasApp\Entrega\Proyecto\src\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.runtimeconfig.dev.json
+D:\spire\Documents\GitHub\NovelasApp\Entrega\Proyecto\src\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.dll
+D:\spire\Documents\GitHub\NovelasApp\Entrega\Proyecto\src\NovelasAPP\bin\Debug\netcoreapp3.0\NovelasAPP.pdb
+D:\spire\Documents\GitHub\NovelasApp\Entrega\Proyecto\src\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.AssemblyInfoInputs.cache
+D:\spire\Documents\GitHub\NovelasApp\Entrega\Proyecto\src\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.AssemblyInfo.cs
+D:\spire\Documents\GitHub\NovelasApp\Entrega\Proyecto\src\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.dll
+D:\spire\Documents\GitHub\NovelasApp\Entrega\Proyecto\src\NovelasAPP\obj\Debug\netcoreapp3.0\NovelasAPP.pdb

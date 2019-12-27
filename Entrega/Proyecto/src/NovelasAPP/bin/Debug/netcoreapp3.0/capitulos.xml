@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<capitulos>
+  <capitulo titulo="sdfg" nota="gf">
+    <seccion nota="dfg" texto="fgd" />
+  </capitulo>
+  <capitulo titulo="sdf" nota="gf">
+    <seccion nota="fgd" texto="dfg" />
+  </capitulo>
+</capitulos>

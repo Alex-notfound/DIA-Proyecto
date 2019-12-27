@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<capitulos>
+  <capitulo titulo="Introduccion" nota="Descripcion del entorno">
+    <seccion nota="" texto="Os veráns na miña aldea, Barcela, non son nin moito menos aburridos.&#xD;&#xA;Só somos 3, pero **facemos por **un grupo de *exploradores.*" />
+  </capitulo>
+  <capitulo titulo="Desarrollo" nota="Comienza la historia">
+    <seccion nota="" texto="Los **chicos **se van *de paseo*" />
+  </capitulo>
+  <capitulo titulo="Titulo Ejemplo" nota="Notita">
+    <seccion nota="" texto="Seccion 1&#xD;&#xA;texto" />
+  </capitulo>
+</capitulos>
