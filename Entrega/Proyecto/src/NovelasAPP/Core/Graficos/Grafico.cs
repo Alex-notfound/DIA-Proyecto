@@ -133,11 +133,16 @@ namespace NovelasAPP.Core.Graficos
         private void NormalizeData()
         {
             int maxHeight = this.DataOrgPosition.Y - this.FrameWidth;
-            int maxValue = this.values.Max();
-
-
+            int maxValue = 1;
+            if (this.Values.Count() != 0)
+            {
+                maxValue = this.values.Max();
+            }
             this.normalizedData = this.values.ToArray();
-
+            if (maxValue == 0)
+            {
+                maxValue = 1;
+            }
             for (int i = 0; i < this.normalizedData.Length; ++i)
             {
                 this.normalizedData[i] =
