@@ -4,6 +4,8 @@ Descripción: 	La funcion principal de la aplicacion es escribir una novela, per
 		también cuenta con otras funciones como un sistema que permite generar gráficas de palabras/secciones escritas o convertir la novela a
 		formato HTML.
 
+Datos de ejemplo: En la carpeta data_example se encuentran los archivos con datos de prueba.
+
 Miembros del grupo:
 		Currás Rodríguez, Alexandre
 		Duque Puga, Daniel
